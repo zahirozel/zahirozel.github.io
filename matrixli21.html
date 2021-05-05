@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bilişim Günlüğü "....."</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>
+Matrix   </title>
+<link rel="stylesheet"  href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/css/style.css">
 	<!--font Awesome iconları sayfada kulanma linki-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
@@ -15,21 +16,20 @@ font-family: 'Tomorrow', sans-serif;
 font-family: "Josefin Sans", sans-serif; -->
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
 integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
-	
-	
+<link href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
 	<style>
 * {
     margin: 0;
     padding: 0;
     text-align: center;
 }
+
 body{ /* sayfa içeriğinin kenar ve sayfa bölümlendirme ayarları  ust- icerik ve altmenuler diye*/
-    font-style: none; 
+    margin: 0;
+	font-style: none; 
 	font-size: 15px;
     font-family: 'Tomorrow', sans-serif;
-	display: flex;
-    flex-direction: column;
+
     background-color:white; opacity: 0.9;
     border-radius: 40px 20px 10px 10px ;
     padding: 5px 15px 0px 15px;
@@ -38,7 +38,7 @@ body{ /* sayfa içeriğinin kenar ve sayfa bölümlendirme ayarları  ust- iceri
 html { font-style: none;
 	font-size: 15px;
 	font-family: "Tomorrow", sans-serif; 
-    background: url(images/arkaplan2.jpg) no-repeat center center fixed; 
+    background: url(file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/arkaplan2.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -46,7 +46,6 @@ html { font-style: none;
     overflow-x: hidden; 
 	margin: 12px 3% 0px 3% ;
 }
-		
 /* nav temaya uygun hale getir */
 nav li :hover { background-color:orange;
 	color:white;
@@ -67,67 +66,76 @@ text-align: right;
 position: relative;
 }
 
+
 .altmenu li ::after {
-	content: " | "; color: darkred; font-weight: bold;
+	content: "|"; color: darkred; font-weight: bold;
 }
-
-
+canvas {display:block;
+	position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    padding:0px;
+	z-index: -2;}
 	</style>
 </head>
+	
 <body >
+	
 	
 	
 
 	<!-- Burası üst bölüm-->
     <div class="ust" >  
 		<div>
-		  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="index.html"> <img src="logo2.png" alt="Muş" height="25px">	  </a>
+		  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/index.html"> <img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/logo2.png" alt="Muş" height="25px">	  </a>
 		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 		    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
 		      <ul class="navbar-nav mr-auto">
-		        <li class="nav-item active"> <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Anasayfa <span class="sr-only">(current)</span></a> </li>
-		        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="web.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-user-friends"></i>WEB Tasarım</a>
-		          <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="web.html">Edebiyat</a>  <a class="dropdown-item" href="web.html">Batıl İnanışlar</a>
+		        <li class="nav-item active"> <a class="nav-link" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/index.html"><i class="fas fa-home"></i>Anasayfa <span class="sr-only">(current)</span></a> </li>
+		        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/web.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-user-friends"></i>WEB Tasarım</a>
+		          <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/web.html">Edebiyat</a>  <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/web.html">Batıl İnanışlar</a>
 		            
-		            <a class="dropdown-item" href="web.html">Halk Bilgisi</a> 
+		            <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/web.html">Halk Bilgisi</a> 
 				
-		            <a class="dropdown-item" href="web.html">Halk oyunları</a>
+		            <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/web.html">Halk oyunları</a>
 				
-		            <a class="dropdown-item" href="web.html">Bağcılık</a> 
+		            <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/web.html">Bağcılık</a> 
 			 
-		            <a class="dropdown-item" href="web.html">Çocuk oyunları</a> 
+		            <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/web.html">Çocuk oyunları</a> 
 			 
-		            <a class="dropdown-item" href="web.html">Örf ve Adetler</a> </div>
+		            <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/web.html">Örf ve Adetler</a> </div>
 	            </li>
 				  
-				  <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="grafik.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-torii-gate"></i> Grafik Tasarım</a>
+				  <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/grafik.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-torii-gate"></i> Grafik Tasarım</a>
 		          <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
-					  <a class="dropdown-item" href="grafik.html">Piknik alanları</a> 
-					  <a class="dropdown-item" href="grafik.html">Kayak</a>
-					  <a class="dropdown-item" href="grafik.html">Camiler </a>
-					  <a class="dropdown-item" href="grafik.html">Hamamlar</a>
-					  <a class="dropdown-item" href="grafik.html">Türbeler ve Yatırlar</a>
-					  <a class="dropdown-item" href="grafik.html">Geleneksel Muş Evleri</a>
-					  <a class="dropdown-item" href="grafik.html">Ören Yerleri</a>
-		           <a class="dropdown-item" href="grafik.html">Kaleler</a>
-					  <a class="dropdown-item" href="grafik.html">Hanlar</a>
-					  <a class="dropdown-item" href="grafik.html">Göller</a>
-					  <a class="dropdown-item" href="grafik.html">Kuş Gözlem Alanı</a>
-					  <a class="dropdown-item" href="grafik.html">Kilise ve Manastırlar</a>
-					  <a class="dropdown-item" href="grafik.html">Höyükler</a>
-					  <a class="dropdown-item" href="grafik.html">Köprüler</a>
+					  <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/grafik.html">Piknik alanları</a> 
+					  <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/grafik.html">Kayak</a>
+					  <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/grafik.html">Camiler </a>
+					  <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/grafik.html">Hamamlar</a>
+					  <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/grafik.html">Türbeler ve Yatırlar</a>
+					  <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/grafik.html">Geleneksel Muş Evleri</a>
+					  <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/grafik.html">Ören Yerleri</a>
+		           <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/grafik.html">Kaleler</a>
+					  <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/grafik.html">Hanlar</a>
+					  <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/grafik.html">Göller</a>
+					  <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/grafik.html">Kuş Gözlem Alanı</a>
+					  <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/grafik.html">Kilise ve Manastırlar</a>
+					  <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/grafik.html">Höyükler</a>
+					  <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/grafik.html">Köprüler</a>
 					  
 					  <div class="dropdown-divider"></div>
-		            <a class="dropdown-item" href="grafik.html">Turistik il haritası ve Gözlem Rehberi
+		            <a class="dropdown-item" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/grafik.html">Turistik il haritası ve Gözlem Rehberi
 </a> </div>
 	            </li>
 				  
-				  <li class="nav-item"> <a class="nav-link" href="Uygulama.html"> <i class="fas fa-hiking"></i>Uygulama</a> </li>
-				  <li class="nav-item"> <a class="nav-link" href="ofis.html"><i class="fas fa-mortar-pestle"></i>Ofis Prog.</a> </li>
-				  <li class="nav-item"> <a class="nav-link" href="os.html">İşletim Sistem.</a> </li>
-				  <li class="nav-item"> <a class="nav-link" href="donanim.html">Donanım</a> </li>
-				  <li class="nav-item"> <a class="nav-link" href="ag.html">AğTasarım</a> </li>
-				  <li class="nav-item"> <a class="nav-link" href="BilgisayarMuh.html"><i class="fas fa-images"></i>BilgisayarMüh.</a> </li> 				 
+				  <li class="nav-item"> <a class="nav-link" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/Uygulama.html"> <i class="fas fa-hiking"></i>Uygulama</a> </li>
+				  <li class="nav-item"> <a class="nav-link" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/ofis.html"><i class="fas fa-mortar-pestle"></i>Ofis Prog.</a> </li>
+				  <li class="nav-item"> <a class="nav-link" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/os.html">İşletim Sistem.</a> </li>
+				  <li class="nav-item"> <a class="nav-link" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/donanim.html">Donanım</a> </li>
+				  <li class="nav-item"> <a class="nav-link" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/ag.html">AğTasarım</a> </li>
+				  <li class="nav-item"> <a class="nav-link" href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/BilgisayarMuh.html"><i class="fas fa-images"></i>BilgisayarMüh.</a> </li> 				 
 	          </ul>
 		      <form class="form-inline my-2 my-lg-0">
 				<input class="form-control mr-sm-2" type="search" placeholder="Sitede Ara" aria-label="Search">
@@ -163,79 +171,79 @@ position: relative;
 		<li data-target="#carouselExampleIndicators1" data-slide-to="12"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active"> <img class="d-block mx-auto" src="images/220005,camilerimizjpg.jpg" alt="0">
+      <div class="carousel-item active"> <img class="d-block mx-auto" src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/220005,camilerimizjpg.jpg" alt="0">
         <div class="carousel-caption">
           <h5> <mark class="vurgu">Camilerimiz </mark> </mark></h5>
           <p> <mark class="vurgu2">Farklı tarihi dönem eserleri Camiilerimiz </mark></p>
         </div>
       </div>
-      <div class="carousel-item"> <img class="d-block mx-auto" src="images/220006,kogsenliklerijpg.jpg" alt="1">
+      <div class="carousel-item"> <img class="d-block mx-auto" src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/220006,kogsenliklerijpg.jpg" alt="1">
         <div class="carousel-caption">
           <h5><mark class="vurgu">Koğ Şenlikleri </mark></h5>
           <p> <mark class="vurgu2">Koğ Tepesinde güneş bir farklı doğar </mark></p>
         </div>
       </div>
-      <div class="carousel-item"> <img class="d-block mx-auto" src="images/220007,laletarlasijpg.jpg" alt="2">
+      <div class="carousel-item"> <img class="d-block mx-auto" src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/220007,laletarlasijpg.jpg" alt="2">
         <div class="carousel-caption">
           <h5><mark class="vurgu">Lale Tarlaları </mark></h5>
           <p><mark class="vurgu2">... Açılmış Laleler güller, Uzar gider Muş Ovası ... </mark > </p> </mark>
         </div>
       </div>
-		<div class="carousel-item"> <img class="d-block mx-auto" src="images/220008,malazgirtjpg.jpg" alt="3">
+		<div class="carousel-item"> <img class="d-block mx-auto" src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/220008,malazgirtjpg.jpg" alt="3">
         <div class="carousel-caption">
           <h5> <mark class="vurgu">Malazgirt Zaferi </mark></h5>
           <p> <mark class="vurgu2">Anadolunun kapıları burada açıldı -1071- </mark > </p>
         </div>
       </div>
-		<div class="carousel-item"> <img class="d-block mx-auto" src="images/220009,mecimekkalebarajijpg.jpg" alt="4">
+		<div class="carousel-item"> <img class="d-block mx-auto" src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/220009,mecimekkalebarajijpg.jpg" alt="4">
         <div class="carousel-caption">
           <h5> <mark class="vurgu">Mercimekkale Barajı </mark></h5>
           <p> <mark class="vurgu2">Mercimekkele Barajı ve piknik alanı </mark > </p>
         </div>
       </div>
-		<div class="carousel-item"> <img class="d-block mx-auto" src="images/220010,muratkoprusujpg.jpg" alt="5">
+		<div class="carousel-item"> <img class="d-block mx-auto" src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/220010,muratkoprusujpg.jpg" alt="5">
         <div class="carousel-caption">
           <h5> <mark class="vurgu">Murat Köprüsü </mark></h5>
           <p> <mark class="vurgu2">Murat Nehri üzerinde bulunan Tarihi Murat Köprüsü  </mark > </p>
         </div>
       </div>
-		<div class="carousel-item"> <img class="d-block mx-auto" src="images/220012,musgeneljpg.jpg" alt="6">
+		<div class="carousel-item"> <img class="d-block mx-auto" src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/220012,musgeneljpg.jpg" alt="6">
         <div class="carousel-caption">
           <h5> <mark class="vurgu">Muş Şehir Merkezi </mark></h5>
           <p> <mark class="vurgu2">Muş şehir Merkezinin genel görünümü </mark > </p>
         </div>
       </div>
-		<div class="carousel-item"> <img class="d-block mx-auto" src="images/220015,uzumarmutjpg.jpg" alt="7">
+		<div class="carousel-item"> <img class="d-block mx-auto" src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/220015,uzumarmutjpg.jpg" alt="7">
         <div class="carousel-caption">
           <h5> <mark class="vurgu"> Meşhur Muş Üzümü ve Muş Armutu </mark></h5>
           <p> <mark class="vurgu2"> Tadı ve kokusuyla benzersiz Muş Üzümü ve Muş Armudunu  </mark > </p>
         </div>
       </div>
-		<div class="carousel-item"> <img class="d-block mx-auto" src="images/220016,kayamezarlarijpg.jpg" alt="8">
+		<div class="carousel-item"> <img class="d-block mx-auto" src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/220016,kayamezarlarijpg.jpg" alt="8">
         <div class="carousel-caption">
           <h5> <mark class="vurgu">Tarihi Kaya Mezarları </mark></h5>
           <p> <mark class="vurgu2"> Tarihe şahitlik eden Kaya Mezarları </mark > </p>
         </div>
       </div>
-		<div class="carousel-item"> <img class="d-block mx-auto" src="images/220017,kisturizmijpg.jpg" alt="9">
+		<div class="carousel-item"> <img class="d-block mx-auto" src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/220017,kisturizmijpg.jpg" alt="9">
         <div class="carousel-caption">
           <h5> <mark class="vurgu">Kış Turizmin bilinmeyen cenneti  </mark></h5>
           <p> <mark class="vurgu2"> Pamuk gibi karı ile Kayak Merkezleri  </mark > </p>
         </div>
       </div>
-		<div class="carousel-item"> <img class="d-block mx-auto" src="images/220018,kiliselerjpg.jpg" alt="10">
+		<div class="carousel-item"> <img class="d-block mx-auto" src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/220018,kiliselerjpg.jpg" alt="10">
         <div class="carousel-caption">
           <h5> <mark class="vurgu">Kiliseler ve Manastırlar </mark></h5>
           <p> <mark class="vurgu2"> Tarihin farklı dönemlerinden kalma onlarca kilise ve manastır </mark > </p>
         </div>
       </div>
-		<div class="carousel-item"> <img class="d-block mx-auto" src="images/220019,hamurbetgolujpg.jpg" alt="11">
+		<div class="carousel-item"> <img class="d-block mx-auto" src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/220019,hamurbetgolujpg.jpg" alt="11">
         <div class="carousel-caption">
           <h5> <mark class="vurgu">Hamurpet gölü </mark></h5>
           <p> <mark class="vurgu2"> Tertemiz suyu, sazanıyla Büyük ve Küçük Hamurpet Gölü </mark > </p>
         </div>
       </div>
-		<div class="carousel-item"> <img class="d-block mx-auto" src="images/220020,halkoyunlariyerelkyafetjpg.jpg" alt="12">
+		<div class="carousel-item"> <img class="d-block mx-auto" src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/220020,halkoyunlariyerelkyafetjpg.jpg" alt="12">
         <div class="carousel-caption">
           <h5> <mark class="vurgu">Halk Oyunları </mark></h5>
           <p> <mark class="vurgu2">Özgün halk oyunları ve Halk Kıyafetleri </mark > </p>
@@ -257,7 +265,7 @@ position: relative;
 	<button class="tablink" onmouseover="openPage('deneme7', this, 'orange')">Dağlar</button>
 <div id="deneme1" class="tabcontent">
   <h2>GenelBilgiler</h2>
-	<img src="images/musgenel/mus_genel1.png" alt="" class="resim" style="float: right">
+	<img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_genel1.png" alt="" class="resim" style="float: right">
   <p> İlimiz Doğu Anadolu Bölgesindedir. 39 29’ ve 38 29’ kuzey enlemleriyle 41 06’ ve 41 47’ doğu boylamlarının arasındadır. Yüzölçümü 8196 km2’dır. Türkiye yüzölçümünün yüzde 1,1’ini kaplar. Muş, doğudan Ağrının Patnos ve Tutak, Bitlis’in Ahlat ve Adilcevaz, kuzeyden Erzurum’un Karayazı, Hınıs, Tekman, Karaçoban, batıdan Bingöl’ün Karlıova ve Solhan, güneyden ise Diyarbakır’ın Kulp, Siirt’in Sason ve Bitlis’in Güroymak ve Mutki ilçeleri ile çevrilidir. </p>
 	
 	  <div></div>
@@ -267,7 +275,7 @@ position: relative;
 <br>İlimiz Doğu Anadolu Bölgesindedir. 39 29’ ve 38 29’ kuzey enlemleriyle 41 06’ ve 41 47’ doğu boylamlarının arasındadır. Yüzölçümü 8196 km2’dır. Türkiye yüzölçümünün yüzde 1,1’ini kaplar. 
 Muş, doğudan Ağrının Patnos ve Tutak, Bitlis’in Ahlat ve Adilcevaz, kuzeyden Erzurum’un Karayazı, Hınıs, Tekman, Karaçoban, batıdan Bingöl’ün Karlıova ve Solhan, güneyden ise Diyarbakır’ın Kulp, Siirt’in Sason ve Bitlis’in Güroymak ve Mutki ilçeleri ile çevrilidir. 
 Muş Güney Doğu Toros Dağlarının uzantısı olan Haçreş dağlarının önemli zirvelerinden Kurtik Dağının kuzeye bakan yamaçlarında, Çar ve Karni derelerinin aktıkları vadiler arasında kuruludur. </p>
-		<img class="resim" src="images/musgenel/mus_genel3.png" alt="">
+		<img class="resim" src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_genel3.png" alt="">
 		<p>
 			<div></div>
 		YERYÜZÜ ŞEKİLLERİ 
@@ -289,13 +297,13 @@ Otluk Dağları: İl alanının ikiye ayırırcasına kuzey batı güneydoğu do
 
 Haçreş (Karaçavuş, Çavuş) Dağları: Muş ilçe merkezinin güney-batısında kuzeybatı-güneydoğu doğrultusunda uzanır. Muş şehri bu dağların önemli zirvelerinden olan Kurtik Dağı (2645 m)’nın kuzeye bakan yamaçlarında kurulmuştur.
 Yakupağa Dağları: Muş il alanının güneydoğusunda uzanır. Doğrultusu doğu-batıdır. Muş-Van illeri arasında tabii bir sınır oluşturacak biçimde uzanan bu dağların önemli bölümü Van’dadır. </p>
-<img class="resim" src="images/musgenel/mus_genel4.png" alt="">
+<img class="resim" src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_genel4.png" alt="">
 		
 	<br>
 	<p>	PLATOLAR
 		<br>
 Platolar il alanının 37,9’nü oluşturur. İl alanının kuzey ve kuzeybatısında yer alan bu platolar Murat vadisinin tavanı ile bu dağların zirveleri arasında sıralanır. Az dalgalı ve kalın bir toprak tabakası ile örtülüdürler. Bol sulu ve otludurlar. Bu nedenle Muş tarımının en gelişmiş dalı hayvancılıktır. </p>
-		<img src="images/musgenel/mus_genel5.png" alt="" class="resim" style="float: right">
+		<img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_genel5.png" alt="" class="resim" style="float: right">
  <br> <p>
 VADİLER VE OVALAR <br>
 Muş ilindeki vadiler Murat Irmağı ve kollarınca açılmıştır. Bu vadilerin en önemlisi Murat Vadisidir. Muş il alanının yüzde 27,2’sini ovalar oluşturur. En önemlisi Muş, Bulanık, Malazgirt ve Liz Ovalarıdır.
@@ -306,7 +314,7 @@ Muş Ovası: Türkiye’nin en büyük ovalarından biridir. Alanı yaklaşık 1
 Bulanık Ovası : İlin doğusundadır. Yüzölçümü 525,2 km2’dır. Bu ova Murat ırmağı boyunca uzanan ince bir şerit görünümündedir. Genişliği ancak birkaç km. olan ovanın uzunluğu yaklaşık 20 km. kadardır. Bulanık ovasında genellikle tahıl ve bol miktarda koyun ve sığır yetiştirilmektedir. 
 Liz Ovası : Bilican Dağlarının güneyinden başlar Murat Irmağına kadar uzanır. Yüzölçümü 160 km2’dır. Dalgalı bir yapı gösterir. Rakım Murat Irmağına doğru artar. Geniş kesimi mera olan Liz Ovasında tahıl, koyun ve sığır yetiştirilir.
 Malazgirt Ovası: Muş il alanının doğusunda yer alır. Yüzölçümü yaklaşık 450 km2’dir. Murat ırmağı ovanının kuzeybatısında geçer. Malazgirt ovası güneyde Süphan Dağı ve uzantıları ile Van Gölünden ayrılır. Yer yer bu dağlardan inen akarsularca yarılmış olan ova geniş bir bozkır görünümündedir. </p>
-		<img src="images/musgenel/mus_vadiova.jpg" alt="" class="resim" style="float: right">
+		<img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_vadiova.jpg" alt="" class="resim" style="float: right">
   <br> 
 		<p>AKARSULAR <br>
 Muş il alanı Fırat Havzası içindedir. İl topraklarını sulayan önemli akarsular Murat ile onun kolu olan Karasu’dur. 
@@ -315,7 +323,7 @@ Murat Irmağı: Van Gölünün kuzeyindeki Aladağ’dan doğar. Uzunluğu 600 k
 
 Karasu: Güroymak’dan doğar. Muş il sınırlarına güneyde girer. Uzunluğu 68 km kadardır. Kuzeybatı-güneydoğu doğrultusunda akar. Başlıca kolları Daralı ovadan kaynağını alan 27 km uzunluğundaki Abdulbahar, Kazana Tepesinden doğan 35 km
 uzunluğundaki Kelereş ile Çar ve Karni’dir. Muş il sınırları içindeki diğer önemli akarsular şunlardır: Aynı adlı dağdan doğan Çiçekveren Deresi (13 km), Aktuzladan doğan Heronek suyu (24 km), Bilican dağından kaynağını alan Liz Suyu (32 km), Kımsoradan doğan Çılbuhur deresi (27 km) ve Hamurpet Dağından kaynağını alan Memanlı suyudur ( 24 km). </p>
-		<img src="images/musgenel/mus_akarsular-mus-ovasi-20.jpg" alt="" class="resim" style="float: right">
+		<img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_akarsular-mus-ovasi-20.jpg" alt="" class="resim" style="float: right">
  <br>
 <p>GÖLLER <br>
 Muş ili sınırları içinde kalan başlıca göller: Haçlı (Bulanık), Hamurpet (Akdogan), Küçük Hamurpet, Gaz (Kaz) gölleridir. 
@@ -323,10 +331,11 @@ Muş ili sınırları içinde kalan başlıca göller: Haçlı (Bulanık), Hamur
 Haçlı (Bulanık) Gölü: İlin güneydoğusunda Bulanık ilçesinin güneyindedir. Göl adını güneyindeki Haçlı Köyünden almıştır. Göl Bulanık adını ise suyun genellikle bulanık oluşundan almıştır. Bir lav seti gölüdür. Haçlı gölü de kuzeyindeki Kızkopan volkanının yükselmesi ile oluşmuştur. Yüzölçümü 10 km2 kadardır. Gölde derinlik 7 m. aşmaz. Haçlı Gölü güneybatıdan akan Şeyhtokum Deresi ile birkaç kaynaktan beslenir. Gölün su düzeyi bütün yıl boyunca hemen, hemen aynı kalır. Kışın donduğunda göl sathında yürünebilmektedir. Gölde alabalık ve aynalısazan bulunmaktadır. 
 
 Büyük Hamurpet Gölü: Varto ilçesinin kuzeybatısında Hamurpet dağlarının batısında yer alır. 2149 Rakımda ve 21 metre derinliğindedir. Yüzölçümü 1088 km2’dır. Gölün her tarafı dik kayalarla çevrilidir. Derinliği küçük göle nazaran daha az olduğundan yeşil renktedir. Kaynak ve kar suları ile beslenir. Kış aylarında donar, su seviyesi tüm yıl boyunca pek değişmez. Gölde bol miktarda aynalısazan balığı ile ördek, kaz, turna ve kunduz da bulunmaktadır. Gölün bulunduğu alan volkanik özellikler taşımaktadır. Fazla olan suyu yakınından geçen İskender çayına boşaltır.
+
 Küçük Hamurpet Gölü: Büyük Hamurpet gölünün yaklaşık 300 m kadar güneyinde ve 2173 rakımda küçük dairesel bir yapısı vardır. Gölün alanı 149 km2 dir. 47 metre derinlikte olduğundan mavi bir görünüme sahiptir. Dipten Büyük Hamurpet’e akıntısı bulunmaktadır. 
 Gaz (Kaz) Gölü: Malazgirt ilçesine bağlı Aktuzla Bucağının yakınlarındaki bu göl Karstik bir göldür. Gölün suyu tuzlu ve acıdır. Derinliği azdır. Kenarları sazlıktır. Bu nedenle ilkbaharda burası göçmen kuşların akınına uğrar. Kaz, ördek, su tavuğu en çok rastlanılan hayvan türleridir. 
  </p>
-		<img src="images/musgenel/mus_haclıgolu.png" alt="" class="resim" style="float: right">
+		<img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_haclıgolu.png" alt="" class="resim" style="float: right">
 </article> </br>
 				</details>
 
@@ -334,7 +343,7 @@ Gaz (Kaz) Gölü: Malazgirt ilçesine bağlı Aktuzla Bucağının yakınlarınd
 
 <div id="deneme2" class="tabcontent">
   <h2>Tarihçe</h2>
-	<img src="images/musgenel/mus_tarihce1.png" alt="" class="resim" style="float: right">
+	<img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_tarihce1.png" alt="" class="resim" style="float: right">
   <p>Muş’un ilk çağ tarihi Urartu’larla başlar, ne var ki Muş’un dahil olduğu Doğu Anadolu’nun yüksek düzlüklerindeki M.Ö. II.bin’e ait yerleşmeleri, henüz yeterince gün ışığına çıkarılamadığından, Urartu’ların atalarının kimler olduğu kesin olarak bilinmemektedir. 
 İlimiz Doğu Anadolu Bölgesindedir. 39 29’ ve 38 29’ kuzey enlemleriyle 41 06’ ve 41 47’ doğu boylamlarının arasındadır. Yüzölçümü 8196 km2’dır. Türkiye yüzölçümünün yüzde 1,1’ini kaplar. Muş, doğudan Ağrının Patnos ve Tutak, Bitlis’in Ahlat ve Adilcevaz, kuzeyden Erzurum’un Karayazı, Hınıs, Tekman, Karaçoban, batıdan Bingöl’ün Karlıova ve Solhan, güneyden ise Diyarbakır’ın Kulp, Siirt’in Sason ve Bitlis’in Güroymak ve Mutki ilçeleri ile çevrilidir. 
  </p> 
@@ -346,7 +355,7 @@ Gaz (Kaz) Gölü: Malazgirt ilçesine bağlı Aktuzla Bucağının yakınlarınd
     Doğu  Anadolu’nun bilinmeyenlerle dolu karanlık tarihi dönemleri, Asur kaynakları ve  kitabeleriyle bir ölçüde aydınlanmıştır. İlk çiviyazılı kaynaklar Asur Kralı 1.  Salmanassar (M.Ö.1274-1245) dönemine aittir. Asur kaynaklarına göre Doğu  Anadolu’nun dağlık yörelerinde Nairi Konfederasyonu adı altında birbirinden  bağımsız küçük beylikler vardı. Asurluların baskısı altında yaşayan bu  beylikler 1. Salmanassardan önceki Asur kralının ölümünü fırsat bilerek ayaklandılar.  1. Salmanassar bu başkaldırıyı bastırmak amacıyla Urartu topraklarına girdi.  Asur’luların Urartu-Nairi ayaklanmalarına karşı giriştiği saldırılar  aralıklarla 400 yıl kadar sürdü.
     Urartu’ların tarih sahnesine  çıkışları M.Ö. XIII. YY’a rastlamakla birlikte devlet olarak teşkilatlanmaları  MÖ. IX. YY.’dadır. Önceleri dağınık  bir  konfederasyon durumunda  olan Urartu’lar  Asur Kralı III. Salmanassar’ın çağdaşı olan ilk Urartu Kralı Aramu (MÖ.850-840)  dan sonra birleşik bir krallık durumuna geldiler.
     Urartu devletinin gerçek kurucusu Aramu’dan sonra kral  olan I. Sarduri (MÖ.840-830) dir. Kral İşpuini dönemi (MÖ.830-810) Urartuların  büyük bayındırlık işlerine giriştikleri, Menuas dönemi (MÖ. 810-786) Urartu  devletinin Ön Asya’nın en güçlü devleti durumuna geldiği ve devletin egemenlik  alanının genişlediği dönemdir. MÖ. VIII. YY. ortalarında, Urartu Devletinin  egemenliği tüm Doğu Anadolu Bölgesine yayıldı. 1. Argişti (MÖ. 786-764) den  sonra yerine geçen oğlu II. Sarduri’nin dönemi (MÖ. 764-735) Urartu Devletinin  zirvesi sayılmaktadır. Muş Varto’ nun Kayalıdere mevkiinde 1965’te yapılan  kazılarda ortaya çıkarılan Urartu kalesi bu Kralın dönemine aittir.
-    Urartu  Devletinin  bundan sonraki tarihi  Asurlular, Kimmerler ve İskitlerin bitmez tükenmez saldırılarıyla sürdü, Urartu  Devleti, MÖ. 585’te İskid akınları sonunda yıkıldı. <img src="images/musgenel/mus_tarihce2.png" alt="" class="resim" style="float: right">
+    Urartu  Devletinin  bundan sonraki tarihi  Asurlular, Kimmerler ve İskitlerin bitmez tükenmez saldırılarıyla sürdü, Urartu  Devleti, MÖ. 585’te İskid akınları sonunda yıkıldı. <img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_tarihce2.png" alt="" class="resim" style="float: right">
     Muş’un  Urartu Devleti için önemi krallığın batı yolunun önemli bir merkezi durumunda olmasından  geliyordu. Başkent Tuşpa’dan batıya giden yol Malazgirt Ovasını geçtikten sonra  Murat Irmağı vadisi boyunca Varto’nun güneyinden Muş Ovasına varıyor. Buradan  batıya yöneliyor, Bingöl üstünden Elazığ-Malatya yolu ile de Orta Anadolu ve  Kuzey Suriye’ye uzanıyordu.
     Muş’un  ilk çağ tarihinde Urartular’ı Medler takip etti. Günümüz İran Azerbaycan’ında  yaşamakta olan Medler, Asur Devleti’ni ortadan kaldırdıktan (MÖ 609) sonra Muş  Ovası’na yöneldiler. Medler, Kimmer-İskit saldırılarından yorgun düşen Urartu  Devleti’ni, tarih sahnesinden silmekte zorlukla karşılaşmadılar. Ne var ki,  Medler’in Doğu Anadolu’daki hâkimiyetleri fazla uzun sürmedi. Persler, Med  ordusunu yenerek (M.Ö. 550) bu devleti ortadan kaldırdılar.
     Persler’in  Doğu Anadolu’daki hâkimiyetleri yaklaşık 200 yüzyıl kadar sürdü. Persler,  I.Dareios zamanında güçlerinin zirvesine çıktılar. Muş ve çevresi Pers hâkimiyetinde  Babil Büyük Satraplığı içinde yer aldı Pers döneminin en önemli gelişmesi,  İmparator II. Artakserkses’e karşı baş kaldıran küçük kardeşi Kiros’un, savaşı  kaybetmesi ve “Onbinler” diye anılan yenik ordusuyla ünlü Anabasis yürüyüşünü  gerçekleştirmesidir. (MÖ 401) “Onbinler” Aras ve Kelkit vadilerine doğru  çekilirken Bingöl ile Muş arasındaki alanları geçmişlerdir. Bu ordunun  çekilişini yöneten Yunanlı komutan ve tarihçi Ksenofon, Muş ve çevre  yaylalarında yaşayan halkın oymak hayatı sürdürdüğünü, ordusuna buğday, arpa,  sebze, et ve binek atı sağladığını anlatır.
@@ -372,7 +381,7 @@ ORTA ÇAĞDA MUŞ <br>
     Muş ve  Malazgirt Moğollar’dan sonra Iran, Doğu Anadolu ve Irak havalisinde kurulan  İlhanlılar Devleti’nin idaresine geçti. Ne var ki, Doğu Anadolu, hiçbir zaman  Ahlatşahlar zamanındaki zenginliğine ve WEB Tasarım yüksekliğine ulaşamadı.  Ilhanlılar’ın Iran’da yıkılmasından sonra Muş ve çevresindeki Türkmenler.  Bağdat’ta hüküm süren Celayirliler’in hanı Sultan Üveys (1356-1357) zamanında  katliama uğradılar. Bu esnada Bu esnada Doğu Anadolu’da Karakoyun ve Akkoyun  Türkmenleri hâkimiyet kurmak için mücadeleye başladılar. Doğu Anadolu’ya hâkim  olan Karakoyunlu’lar zamanında Muş, bu beyliğin sınırları içerisinde kaldı.
     Bu arada  İran üzerinden batıya doğru ilerleyen Timur tehlikesi ortaya çıktı. Timur’un  önünden kaçan Türkmen boyları Karakoyun’lu topraklarına girince Karakoyunlu  hükümdarınca Muş, Bulanık Malazgirt ve Varto’nun dağlık kesimlerine  yerleştirildiler. Karakoyunlu hükümdarı Kara Yusuf, Timur’a karşı koyamayınca  Osmanlılara sığındı. Karakoyunlu topraklarına giren Timur girdiği her yerde  yaptığı gibi Muş ve Malazgirt’i de tahrip etti, halkı kılıçtan geçirdi. Evliya  Çelebi seyahatnamesinde Muş şehrinden bahsederken Timur’un Muş’ta yaptığı  tahribatın izlerinin hala mevcut olduğunu söyler.
     Timur  Osmanlı Sultanı Yıldırım Beyazıt’ı l402 yılında Ankara savaşında mağlup edince Anadolu  tamamen Timur’un kontrolü altına geçti. Timur Çin seferine gitmek için  Anadolu’dan ayrıldıktan sonra Anadolu’da Osmanlı şehzadeleri arasında taht  kavgaları başladı. Doğu Anadolu’ya geri dönen Karakoyunlu Yusuf. Beyliğini  yeniden kurdu. Kara Yusuf’un ölümünden sonra Akkoyunlular Karakoyunluları  tehdit etmeye başladılar.
-    Akkoyunlu hükümdarı Uzun Hasan ordusunu Muş Ovası’ nı doğudan çeviren  dağların gerisine gizleyerek Karakoyunlu hükümdarı Cihanşah ‘ı beklemeye  başladı. Pusudan habersiz ihtiyatsız hareket eden Cihanşah bir gece baskınında  ele geçirilip öldürüldü. Uzun Hasan böylece Karakoyunlu Devleti’nin çöküşüne  zemin hazırladı ve Doğu Anadolu’yu hâkimiyeti altına aldı.<img src="images/musgenel/mus_tarihce3.png" alt="" class="resim" style="float: right">
+    Akkoyunlu hükümdarı Uzun Hasan ordusunu Muş Ovası’ nı doğudan çeviren  dağların gerisine gizleyerek Karakoyunlu hükümdarı Cihanşah ‘ı beklemeye  başladı. Pusudan habersiz ihtiyatsız hareket eden Cihanşah bir gece baskınında  ele geçirilip öldürüldü. Uzun Hasan böylece Karakoyunlu Devleti’nin çöküşüne  zemin hazırladı ve Doğu Anadolu’yu hâkimiyeti altına aldı.<img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_tarihce3.png" alt="" class="resim" style="float: right">
     Osmanlılarla komşu olan Akkoyunlu hükümdarı, bütün Anadolu’ya hâkim  olmak için Osmanlı Sultanı Fatih Sultan Mehmet’le 2 ağustos l473 ‘de  Otlukbeli’nde savaşa tutuştu. Uzun Hasan, bu savaşta yenilince ülkesi sarsıldı.  Uzun hasan,l478’de ölünce Akkoyunlular’da iç karışıklıklar baş gösterdi.  İran’da şeyh Seyfettin Erdebili neslinden şeyh Haydar’ın oğlu olan Şah İsmail,  İran ve Akkoyunluların toprakları üzerinde Safeviler Devleti’ni kurdu. Şah  İsmail’in annesi Alemşahbanu Uzun Hasan’ın kızıdır. Şii itikadını benimseyen Şah  İsmail, Doğu Anadolu ‘da sünni Türkmenlerin arasında katliama başladı.  Akkoyunlu Türkmenleri’yle Şah İsmail arasındaki mücadeleden en çok Doğu Anadolu  halkı acı çekti.
     Muş ve  çevresi Ahlatşahlar yönetimindeyken tamamen Türkleşmiş ve Ahlatşahlar’ın imar  faaliyetleriyle de Doğu Anadolu’nun zengin yörelerinden biri haline gelmişti.  Marco Polo XIII  yy ortalarında Muş ve  Mardin’de pamuk baharat ve çeşitli kumaşların çok miktarda imal edildiğin  kaydeder Muş ve çevresi Moğolların ve Timur’un tahribatından bir hayli  etkilendi ve geriledi. Şehirleri terk eden Türkler köylere ve yaylalara doğru  çekilip çiftçiliği bırakarak hayvan beslemeye başladılar. Akkoyunlu Uzun Hasan  zamanında Uzun Hasanı ziyaret eden İtalyan elçisi Barbaro Muş’tan bahsederken  şehrin meskûn ve kalesinin müstahkem olduğundan söz eder.
 		</p> <br>
@@ -387,7 +396,7 @@ YENİ ÇAĞDA MUŞ    <br>
  <p>
 YAKIN ÇAĞDA MUŞ <br>
     Muşta  yerel paşalık yapan Aleaddin paşa zamanında 1794’te İran şahı Doğu Anadolu’ya  girerek Muş ve Hınıs’ı yağmalattı. İran’lıların kışkırtmasıyla çıkan isyanları  bastırmak için harekete geçen Osmanlı Devleti yardımcı kuvvet olarak yerel  paşalardan asker toplarken Muş Beylerbeyi Aleaddin paşanın oğlu Emin paşadan da  yardım aldı ve isyancı aşiretler üzerine yürüdü. 1821 de Kaçar hanedanından  Fatih Ali Şahın veliahtı ve Iran şahı Abbas Mirza Doğu Anadolu’ya girerek Muş  ve çevresini yağmaladı.
-    1826’da Sultan II. Mahmut Yeniçeri Ocağını kaldırırken  Erzurum Eyaletinde Yeniçeri ağası olan Gürcü Osman Paşa, Muş Beylerbeyi Emin  paşa tarafından yakalanarak Varto’ya getirilip idam edildi. Bu esnada Doğu  Anadolu’daki yerel paşalar, nüfuslarını artırarak merkezi otoriteye karşı  ayaklanmaya başladılar. 1839’da ilan edilen Gülhane Hattı Hümayunu’ ile birlikte  yerel beyliklere son verilmeye başlandı. Muş’un Bağlar Köyü yakınındaki  Alaeddin Paşa oğullarının konağına hücum eden halk, konağı yağmaladı. Devlet  Muş’ta yerel paşalığa son vererek burayı Erzurum’a bağlı sancak merkezi haline  getirdi.<img src="images/musgenel/tarihce_tek-odali-kaya-mezari-2-bulanik.png" alt="" class="resim" style="float: right">
+    1826’da Sultan II. Mahmut Yeniçeri Ocağını kaldırırken  Erzurum Eyaletinde Yeniçeri ağası olan Gürcü Osman Paşa, Muş Beylerbeyi Emin  paşa tarafından yakalanarak Varto’ya getirilip idam edildi. Bu esnada Doğu  Anadolu’daki yerel paşalar, nüfuslarını artırarak merkezi otoriteye karşı  ayaklanmaya başladılar. 1839’da ilan edilen Gülhane Hattı Hümayunu’ ile birlikte  yerel beyliklere son verilmeye başlandı. Muş’un Bağlar Köyü yakınındaki  Alaeddin Paşa oğullarının konağına hücum eden halk, konağı yağmaladı. Devlet  Muş’ta yerel paşalığa son vererek burayı Erzurum’a bağlı sancak merkezi haline  getirdi.<img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/tarihce_tek-odali-kaya-mezari-2-bulanik.png" alt="" class="resim" style="float: right">
     1889’da  II. Abdülhamit Doğu Anadolu’da sükûneti sağlamak ve doğudan gelecek Rus  tehlikesine karşı mahalli güçleri kullanmak için Hamidiye Alayları kurdurdu  Hamidiye alaylarının paşaları yöredeki aşiret ağalarından seçildi. Aşiret  ağalarının oğulları İstanbul’da açılan askeri okullarda eğitilerek Hamidiye  alaylarının başına getirildi. 1890’lı yıllardan itibaren Doğu Anadolu’da  Ermenilerin faaliyetleri başladı. Çeteler halinde hareket eden Ermeniler Muş,  Bulanık, Malazgirt ve Varto köylerinde katliama giriştiler. Hıristiyan ve  doğuda Rusların müttefikleri olmaları sebebiyle Ermeniler hem Avrupa âleminden  hem de Çarlık Rusya’sından yardım görerek komiteler kurmaya başladılar.  Dışarıdan Osmanlı Devletine baskı yaptırarak Doğu Anadolu’da bir Ermeni Devleti  kurmak için harekete geçtiler. Hamidiye alayları doğuya dışarıdan gelecek  tehlikelere karşı koymada yararlı olurken aşiret kavgalarında aynı başarıyı  gösteremediler. Muş, Malazgirt, Varto ve Bulanıkta aşiret kavgaları alevlendi  bazı Hamidiye alaylarının taraflı hareket etmesi üzerine yörede asayiş tamamen  bozuldu ve aşiretler arası çatışmalar yoğunlaştı.
     XIX. yy’ın  sonları ve XX yy.ın ilk yıllarında Muş bölgesi harici teşviklerle körüklenen  Ermeni Taşnakları’nın ihtilal hareketine sahne oldu. 1894’de Sason ihtilalini  müteakip 1895 senesi içerisinde hükümetin kurduğu ve Erzurum’daki Fransa,  İngiltere ve Rus Konsoloslarının katıldığı bir heyet Muş’ta toplanarak isyanın sebeplerini  görüştü. 1901 senesinde Muş ovasında faaliyetlerde bulunan Ermeni çeteleri  köyleri yağmaladılar ve hükümet kuvvetleri ile çarpıştılar. 1905’teki Ermeni  baskınları Muş ve çevresine büyük zararlar verdi. </p>
  <p>
@@ -398,7 +407,7 @@ YAKIN ÇAĞDA MUŞ <br>
 		<p>
 KURTULUŞ MÜCADELESİNDE MUŞ <br>
     Sevr  anlaşmasına dayanarak Doğuda devlet kurmak isteyen Ermeniler  teşkilatlandırdıkları komitelerle katliamlarına devam ederken, Anadolu’da işgal  edilmeye başlanmıştı. 19 Mayıs 1919’da Samsuna çıkan Mustafa Kemal Paşa Amasya  tamimini yayınladıktan sonra Erzurum’a geçti.   Bu sırada Doğu Anadolu halkı Ermeni katliamlarını durdurma ve Ermenilere  karşı mücadele kararı alırken civar vilayetlere dağılmış olan Muş halkı da  yeniden şehre dönmeye başladı. Ermenistan üzerinden Doğu Anadolu’ya giren  Ermeni orduları, Kazım Karabekir Paşa komutasındaki Türk ordusunca yenilgiye  uğratıldı. Gümrü Antlaşmasıyla da Doğu Anadolu işgal ve katliamlardan kurtuldu.   </p>
-		<br> <img src="images/musgenel/tarihce_mus-1923.png" alt="" class="resim" style="float: right">
+		<br> <img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/tarihce_mus-1923.png" alt="" class="resim" style="float: right">
 		<p>
 CUMHURİYET DÖNEMİNDE MUŞ <br>
 Cumhuriyetin  ilânından sonra yurtta kalkınma hamlesiyle birlikte önemli inkılâplar yapılmaya başlandı. Bu inkılâplara  tepki. Olarak Doğu Anadolu' da Şeyh Sait İsyanı patlak verdi. Bu isyanı  destekleyenlerin başında Ha-midiye Alayları'nın komutanlığını ya¬pan ve doğuda büyük nüfuzu olan Halit Paşa  da bulunuyordu. Halit Paşa'nın Osmanlı  Devleti'nin çöküşü sırasında kurulan zararlı cemiyetler¬den Kürt Teali  cemiyetiyle yakından ilişkisi vardı.  Hamidiye Alayları'nın gücüne güvenen Halit Paşa, dışar¬dan da destek göreceğini umarak isyan etmek için yöre halkından kuv¬vet toplamaya  başladı.   T.B.M.M. Bit¬lis Mebusu Yusuf Ziya Bey'le anlaştı. Kendisi  Doğu Anadolu'da ayaklanır¬ken bir yandan da  isyanının amacını diğer Cemiyeti  Akvama duyurarak olayı  milletlerarası mesele haline ge¬tirmeye  çalıştı. Halit Paşa bu maksat¬la Varto'nun Kereç  Köyü'nde aşiret ağalarıyla yaptığı  toplantıda umduğu desteği bulamadı. Bunun üzerine kendisine katılmayan ağaları, Ankara Hükümeti'ne  isyan etmiş gibi göster¬meye çalıştı.  Aşiretler üzerine yaptığı baskınlarla  Varto ve Bulanık çevre¬sinde yağmalama hareketlerinde bu¬lundu. Olayın aslı anlaşılınca Halit Bey  Erzurum'a davet edilerek orada Kolordu  Divanı Muhasebat Komisyon Reisliği vazifesiyle alıkondu ve miralay rütbesi verildi. Erzurum'da siyasi  faaliyetlerine de¬vam eden Halit Paşa bu  sefer şeyh¬lere yanaşmayı denedi. Türkiye Cumhuriyeti'nin çıkarmış olduğu ka¬nunları İslam'ın aleyhine  göstererek Şeyh Sait'in desteğini aldı. Pasinler depremi sebebiyle Erzurum'a gelen Mustafa Kemal Atatürk, Halit  Bey'in faaliyetlerini öğrenerek  tutuklanması¬nı emretti. Bitlis Cezaevi'nden Şeyh Sait'le haberleşen  Halit Bey, isyanın bastırma emrini verdi.  5.2.1925'de Doğu Anadolu'da büyük bir  isyan çıktı. Şeyh Sait'in kuvvetleri  dört kola ayrılarak Doğu Anadolu'ya yayılırken dördüncü kol Muş, Varto, Malazgirt ve Göynük çevresini işgal etmeye çalıştı. Varto'yu ele geçiren isyancılar Muş'a ilerledilerse de  Muş Vali Vekili Sırrı Bey, halktan topladığı yardımcı kuvvetlerle Murat Köprüsü  civarında Şeyh Sait'in isyancılarını mağlup etti ve isyancıların Varto'ya geri çekilme¬sini sağladı. Bu olaylar esnasında Halit Bey ve Yusuf Ziya, Bitlis Cezaevinde idam edildi. Dört ayrı  yerdeki isyanın üçü bastırılınca Şeyh Sait Varto'ya gelerek Bulanık  üzerinden İran'a geçmeye çalıştı. Şeyh Sait'in önderliğinde Muş'a doğru tekrar iler¬leyen isyancılar, Muş-Varto arasında¬ki tarihi Abdurrahman Paşa  Köprüsü üzerinde askeri kuvvetlere teslim ol¬mak  zorunda kaldı. Böylelikle Muş halkının desteklemediği, ama Var¬to'ya büyük zararlar vermiş olan Şeyh Sait isyanı sona erdi.  </p>
@@ -413,7 +422,7 @@ MUŞ ADININ KAYNAĞI <br>
             Öldeçi sıçgan muş ayakı kaşır.
             Ölecek sıçan kedi aşağı kaşır.
 			Buradan da Muş kedi manasına geldiği görülmektedir. </p>
-		<br><img src="images/musgenel/tarihce_bulanik-kaya-mezarlar.png" alt="" class="resim" style="float: right">
+		<br><img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/tarihce_bulanik-kaya-mezarlar.png" alt="" class="resim" style="float: right">
 		<p>
 EVLİYA ÇELEBİ’NİN  GÖZÜ İLE MUŞ <br>
     Van eyaleti hükmünde Van deryası  sahilindeki Tahtuvan subaşılığına iki menzil ve Bitlis’e bir menzil yakındır.  Şerefname tarihinin dediğine göre bu Muş şehri, Azerbaycan şehirlerinden bir  tanesi idi.   Sonra Van deryasının  kuzeyinde (Adilcevaz ) kalesi yakınındaki Süphan dağında halen mahfuz durup  40-50 senede bir ses duyulur, 70-80 senede bir kere 5- 10 gün kadar Süphan  kayasından kuyruğunu çıkarır bir yedi başlı ejder, o asırda fırsat bulup bütün  Nemrutluları yiyerek Allah’ın emriyle yine Süphan dağındaki mağarasına girip  mahpus kalmıştır. Sonra yine Nemrut lâin kavmine Cenab-ı Hak Muş sahrasında bir  büyük fare hâsıl edip bütün Nemrutluları yedirerek Muş ahalisini helak ettiği  için şehrin adına (Muş) derler. Muşun çıktığı büyük mağara halen görülür. Bu  mağara içinde olan fare ve sıçan başka bir diyarda yoktur. Allah’ın emriyle  İskender’in Filkos namındaki hekiminin tılsımı sebebiyle Muş Sahrasında asla  sıçan olmaz. Timurlenk Al-i Osman üzerine hareket edince bu Muş şehrini ve  kalesini harap, halkını kebap, evlerini türap eylemiştir ki halen haraplı  eserleri görülür. Şehir, Muş sahrasının ağzında bir dağın eteğindedir.  </p>
@@ -424,7 +433,7 @@ EVLİYA ÇELEBİ’NİN  GÖZÜ İLE MUŞ <br>
  <h2>Akarsular</h2>
 	
   <p>Muş il alanı Fırat Havzası içindedir. İl topraklarını sulayan önemli akarsular Murat ile onun kolu olan Karasu’dur. 
- </p> <img src="images/musgenel/mus_akarsular-mus-ovasi-20.jpg" alt="" class="resim" style="float: right">
+ </p> <img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_akarsular-mus-ovasi-20.jpg" alt="" class="resim" style="float: right">
 	<details>
 			<summary style="outline: none;"> Ayrıntılar... <i class="fas fa-angle-double-down"></i> </summary><article> 
 		<p>
@@ -432,7 +441,7 @@ Muş il alanı Fırat Havzası içindedir. İl topraklarını sulayan önemli ak
 1- Murat Irmağı <br>
 Van Gölünün kuzeyindeki Aladağ’dan doğar. Uzunluğu 600 km kadardır. Muş il sınırlarına kuzey doğudan girer. Kuzey-güney doğrultusunda bir süre akan ırmak bu sırada birkaç küçük dereyle ve doğuda da Karakaya Deresiyle birleşir. Debisi 200-300 m3’tür. Debi ırmağın kabardığı zamanlarda 2500 m3 bulur. Suyun azaldığı zamanlarda ise 50-70 m3 kadar düşer. Murat ırmağını besleyen diğer akarsular şunlardır: Badişah, Şehit, Heftreng, Körsuyu, Liz, Köşker dere ve çaylarıdır. 
  
-		</p><p> <img src="images/musgenel/mus_akarsular-tarihi-murat-koprusu.jpg" alt="" class="resim" style="float: right">
+		</p><p> <img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_akarsular-tarihi-murat-koprusu.jpg" alt="" class="resim" style="float: right">
  
 2- Karasu <br>
 Göroymak’dan doğar. Muş il sınır-larına güneyde girer. Uzunluğu 68 km kadardır. Kuzeybatı-güneydoğu doğrul-tusunda akar. Başlıca kolları Daralıovadan kaynağını alan 27 km uzunluğundaki Ab-dulbahar, Kazana Tepesinden doğan 35 km uzunluğundaki Kelereş ile Çar ve Karni’dir. Muş il sınırları içindeki diğer önemli akarsular şunlardır: Aynı adlı dağdan doğan Çiçekveren Deresi (13 km), Aktuzladan doğan Heronek suyu (24 km), Bilican dağından kaynağını alan Liz Suyu (32 km), Kımsoradan doğan Çılbuhur deresi (27 km) ve Hamurpet Dağından kaynağını alan Memanlı suyudur ( 24 km). 
@@ -444,7 +453,7 @@ Göroymak’dan doğar. Muş il sınır-larına güneyde girer. Uzunluğu 68 km 
    <h2>Vadiler ve Ovalar</h2>
 	
   <p>
-Muş ilindeki vadiler Murat Irmağı ve kollarınca açılmıştır. Bu vadilerin en önemlisi Murat Vadisidir. Muş il alanının yüzde 27.2’sini ovalar oluşturur. En önemlisi Muş, Bulanık, Malazgirt ve Liz Ovalarıdır.   <img src="images/musgenel/mus_vadiova.jpg" alt="" class="resim" style="float: right">
+Muş ilindeki vadiler Murat Irmağı ve kollarınca açılmıştır. Bu vadilerin en önemlisi Murat Vadisidir. Muş il alanının yüzde 27.2’sini ovalar oluşturur. En önemlisi Muş, Bulanık, Malazgirt ve Liz Ovalarıdır.   <img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_vadiova.jpg" alt="" class="resim" style="float: right">
  </p>
 	<details>
 			<summary style="outline: none;"> Ayrıntılar... <i class="fas fa-angle-double-down"></i> </summary><article> 
@@ -452,7 +461,7 @@ Muş ilindeki vadiler Murat Irmağı ve kollarınca açılmıştır. Bu vadileri
 		<p>
 1- Murat Vadisi
 İl alanının kuzey batısında başlar. Başlangıçta kuzey güney doğrultulu derin bir boğaz biçiminde olan vadi sonra batıya döner. Bulanık ovasına girer. Vadi tavanı Muş ovasında genişler. Ovanın çıkışında yeniden derinleşir. Murat Vadisi Ulukaya Köyünün güneyinde il sınırlarının dışına çıkar. </p>
-		<img src="images/musgenel/mus_akarsular-mus-ovasi-20.jpg" alt="" class="resim" style="float: right">
+		<img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_akarsular-mus-ovasi-20.jpg" alt="" class="resim" style="float: right">
 <p>
 2- Muş Ovası
 Türkiye’nin en büyük ovalarından biridir. Alanı yaklaşık 1650 km2’dır. Uzunluğu 80 km, genişliği ise 30 km’ yi bulur. Basamaklı bir yapı gösterir. Ovanın güneyini Haçreş Dağları çevirir. Kuzeyde ise Şerafettin Dağları ve bu sıranın uzantıları vardır. Muş ovasının doğu ucunda Nemrut Dağı yer alır. Batı ucunda ise dağlık alanlar vardır. Muş ovası 3. Jeolojik zamanın miyosen dönemi ortalarına kadar bir birikinti iken yer kabuğu hareketleri sonucu bir çöküntü alanına dönüşmüştür. Bu alan sonraki jeolojik dönemlerde yeni alüvyonlarla da örtülerek verimli bir alan durumuna gelmiştir. </p>
@@ -474,7 +483,7 @@ Muş il alanının doğusunda yer alır. Yüzölçümü yaklaşık 450 km2’dir
 	
   <p>
 Muş ili yüksek ve dağlı bir yörededir. İl alanının yüzde 34.9’nü kaplayan dağlar, Güney Doğu Torosların uzantılarıdır. Bu dağlar, Alp-Himalaya kıvrım sistemiyle birlikte oluşmuş genç dağlardır. 
- </p> <img src="images/musgenel/mus_genel4.png" alt="" class="resim" style="float: right">
+ </p> <img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_genel4.png" alt="" class="resim" style="float: right">
 	<details>
 			<summary style="outline: none;"> Ayrıntılar... <i class="fas fa-angle-double-down"></i> </summary><article>
 		<p>
@@ -488,7 +497,7 @@ Muş ili yüksek ve dağlı bir yörededir. İl alanının yüzde 34.9’nü kap
 	
   <p>
 Muş ili sınırları içinde kalan başlıca göller: Haçlı (Bulanık), Hamurpet (Akdogan), Küçük Hamurpet, Gaz (Kaz) gölleridir.  
- </p> <img src="images/musgenel/mus_hamurpetgolu.png" alt="" class="resim" style="float: right">
+ </p> <img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_hamurpetgolu.png" alt="" class="resim" style="float: right">
 	<details>
 			<summary style="outline: none;"> Ayrıntılar... <i class="fas fa-angle-double-down"></i> </summary><article> 
 		<p>Muş ili sınırları içinde kalan başlıca göller: Haçlı (Bulanık), Hamurpet (Akdogan), Küçük Hamurpet, Gaz (Kaz) gölleridir. </p>
@@ -496,7 +505,7 @@ Muş ili sınırları içinde kalan başlıca göller: Haçlı (Bulanık), Hamur
 1- Haçlı (Bulanık) Gölü
 
  <br>
-<img src="images/musgenel/mus_haclıgolu.png" alt="" class="resim" style="float: right">
+<img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_haclıgolu.png" alt="" class="resim" style="float: right">
 İlin güneydoğusunda Bulanık ilçesinin güneyindedir. Göl adını güneyindeki Haçlı Köyünden almıştır. Göl Bulanık adını ise suyun genellikle bulanık oluşundan almıştır. Bir lav seti gölüdür. Haçlı gölü de kuzeyindeki Kızkopan volkanının yükselmesi ile oluşmuştur. Yüzölçümü 10 km2 kadardır. Gölde derinlik 7 m. aşmaz. Haçlı Gölü güneybatıdan akan Şeyhtokum Deresi ile birkaç kaynaktan beslenir. Gölün su düzeyi bütün yıl boyunca hemen, hemen aynı kalır. Kışın donduğunda göl sathında yürünebilmektedir. Gölde alabalık ve aynalısazan bulunmaktadır. </p>
 		<p>
 2- Hamurpet (Akdoğan) Gölü
@@ -516,10 +525,10 @@ Malazgirt ilçesine bağlı Aktuzla Bucağının yakınlarındaki bu göl Karsti
 	
   <p>
 Güneydoğu Toros Dağları’nın uzantıları Muş il alanını çevreler. Eskiden gür ormanlarla örtülü olan bu genç dağlar, zamanla çıplaklaşmıştır. Muş ilinin başlıca önemli dağları Akdoğan (Hamurpet), Şerafettin, Bilican, Bingöl, Haçreş (Karaçavuş, Çavuş), Otluk ve Yakupağa dağlarıdır.
- </p> <img src="images/musgenel/mus_daglar.png" alt="" class="resim" style="float: right">
+ </p> <img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_daglar.png" alt="" class="resim" style="float: right">
 	<details>
 			<summary style="outline: none;"> Ayrıntılar... <i class="fas fa-angle-double-down"></i> </summary><article>
-	<p>	Güneydoğu Toros Dağları’nın uzantıları Muş il alanını çevreler. Eskiden gür ormanlarla örtülü olan bu genç dağlar, zamanla çıplaklaşmıştır. Muş ilinin başlıca önemli dağları Akdoğan (Hamurpet), Şerafettin, Bilican, Bingöl, Haçreş (Karaçavuş, Çavuş), Otluk ve Yakupağa dağlarıdır. </p> <img src="images/musgenel/mus_daglar2.png" alt="" class="resim" style="float: right">
+	<p>	Güneydoğu Toros Dağları’nın uzantıları Muş il alanını çevreler. Eskiden gür ormanlarla örtülü olan bu genç dağlar, zamanla çıplaklaşmıştır. Muş ilinin başlıca önemli dağları Akdoğan (Hamurpet), Şerafettin, Bilican, Bingöl, Haçreş (Karaçavuş, Çavuş), Otluk ve Yakupağa dağlarıdır. </p> <img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_daglar2.png" alt="" class="resim" style="float: right">
 <br> <p>
 1-Akdoğan (Hamurpet) Dağı:
  
@@ -528,7 +537,7 @@ Muş’un kuzeyinde yer alır. Doğrultusu kuzeydoğu-güneybatıdır. Bu doğru
 		</p> <br><p>
 2-Şerafettin Dağları <br>
 
-Muş il alanının batısını engebelendirir. Büyük bölümü Bingöl ilinde kalan bu dağlar, doğu-batı doğrultulu çok yüksek ve düzenli bir sırt görünümündedir.<img src="images/musgenel/mus_daglar3.png" alt="" class="resim" style="float: right">
+Muş il alanının batısını engebelendirir. Büyük bölümü Bingöl ilinde kalan bu dağlar, doğu-batı doğrultulu çok yüksek ve düzenli bir sırt görünümündedir.<img src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/images/musgenel/mus_daglar3.png" alt="" class="resim" style="float: right">
 3-Bilican Dağları: <br>
 Bulanık ve Liz Ovaları arasında yer alır. Doğrultusu kuzeybatı-güneydoğudur. Haçlı (Kazan,Bulanık) Gölünün kuzeybatısında balık sırtı biçiminde uzanan bu dağlar daha sonra düzenli bir biçim alır. Rakım güneye inildikçe artar. Bilican Dağları, Bulanık ilçesine doğru düzenli biçimde alçalarak uzanır. Burada Laris Tepesini oluşturduktan sonra birden kesilir. Bilican Dağlarının en yüksek zirvesi 2950 m. Rakımlı, Bilican Tepe (Ziyaret Tepe, Vangesor Tepesi) dir. Diğer önemli zirveleri Avni Kalesi Tepesi (2754 m), Şeyhtokum (2300 m), Karaburun (2500 m) ve Hasan Tepeleridir. </p>
  
@@ -578,15 +587,15 @@ Muş il alanının güneydoğusunda uzanır. Doğrultusu doğu-batıdır. Muş-V
 		<div class="row" style="padding: 5px 1px 1px -50px;">
 		 <div class="col-md-9"> 
  <ul class="altmenu">
-	 <li> <a href="İndexZahir.html">Anasayfa</a></li>
-     <li> <a href="BilgisayarMuh.html">Bilgisayar Mühendisliği</a></li> 
-     <li> <a href="web.html">WEB Tasarımı</a> </li>
-     <li> <a href="ag.html">Ağ Tasarımı</a> </li>
-	 <li> <a href="Uygulama.html"> Uygulama Programları</a></li>
-	 <li> <a href="grafik.html"> Grafik Tasarım</a> </li>
-	 <li> <a href="donanim.html">Bilgisayar Donanımı</a> </li>
-	 <li> <a href="ofis.html">Ofis Programları </a> </li>
-	 <li> <a href="os.html">İşletim Sistemleri</a> </li>
+	 <li> <a href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/İndexZahir.html">Anasayfa</a></li>
+     <li> <a href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/BilgisayarMuh.html">Bilgisayar Mühendisliği</a></li> 
+     <li> <a href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/web.html">WEB Tasarımı</a> </li>
+     <li> <a href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/ag.html">Ağ Tasarımı</a> </li>
+	 <li> <a href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/Uygulama.html"> Uygulama Programları</a></li>
+	 <li> <a href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/grafik.html"> Grafik Tasarım</a> </li>
+	 <li> <a href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/donanim.html">Bilgisayar Donanımı</a> </li>
+	 <li> <a href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/ofis.html">Ofis Programları </a> </li>
+	 <li> <a href="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/os.html">İşletim Sistemleri</a> </li>
 </ul> 
 	   </div>
 			
@@ -610,14 +619,47 @@ Muş il alanının güneydoğusunda uzanır. Doğrultusu doğu-batıdır. Muş-V
 		</div>
 	</div>
 	</div>
-	
-
 
 	
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap-4.4.1.js"></script>
-<script src="js/tabbuton.js"></script>
+	<div  style="position: absolute;top: 0;left: 0;bottom: 0;">
+	 <canvas id="canvas"></canvas>
+	</div>
+	<!-- matrix efect script burda-->
+	
+<script> 
+	canvas.height = window.screen.height;
+canvas.width = window.screen.width;
 
+var columns = []
+var character =0;
+for (i = 0; i < 256; columns[i++] = 1);
 
-</body> </html>
+function step() {
+    canvas.getContext('2d').fillStyle = 'rgba(0,0,0,0.05)';
+    canvas.getContext('2d').fillRect(0, 0, canvas.width, canvas.height);
+   
+    canvas.getContext('2d').fillStyle = '#0F0';
+    columns.map(function (value, index) {
+          canvas.getContext('2d').fillText(character, //text
+                                         index * 10, //x
+                                         value //y
+                                        );
+      if(character==0)  
+      character=1;
+      else
+        character=0;
+        columns[index] = value > 758 + Math.random() * 1e4 ? 0 : value + 10
+    })
+}
+setInterval(step, 33)
+	
+	</script>
+
+<script src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/js/jquery-3.4.1.min.js"></script>
+<script src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/js/popper.min.js"></script>
+	<script src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/js/bootstrap-4.4.1.js"></script>
+<script src="file:///C|/Users/mzahir/Desktop/sitem/BMH104/ZahirOzel/js/tabbuton.js"></script>
+
+	
+</body>
+	</html>

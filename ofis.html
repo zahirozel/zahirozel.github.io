@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muş Yemekleri</title>
+<link rel="stylesheet"  href="css/style.css">
+	<!--font Awesome iconları sayfada kulanma linki-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tomorrow&display=swap" rel="stylesheet">
+<!--bu yazı stilllerini  beğendim
+font-family: 'Tomorrow', sans-serif;
+font-family: "Josefin Sans", sans-serif; -->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+	<style>
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{ /* sayfa içeriğinin kenar ve sayfa bölümlendirme ayarları  ust- icerik ve altmenuler diye*/
+    font-style: none; 
+	font-size: 15px;
+    font-family: 'Tomorrow', sans-serif;
+	display: flex;
+    flex-direction: column;
+    background-color:white; opacity: 0.9;
+    border-radius: 40px 20px 10px 10px ;
+    padding: 5px 15px 0px 15px;
+	line-height: 1.5em;
+    } 
+html { font-style: none;
+	font-size: 15px;
+	font-family: "Tomorrow", sans-serif; 
+    background: url(images/arkaplan2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-x: hidden; 
+	margin: 12px 3% 0px 3% ;
+}
+/* nav temaya uygun hale getir */
+nav li :hover { background-color:orange;
+	color:white;
+	vertical-align: -10px;
+	line-height: 2rem;
+	margin: -5px;
+	padding: -15px;
+}
+/*
+<!--deneme işlemleri -->
+nav li { background-color: red;
+	color: azure;
+}  */
+.dropdown-item::before{ content: ">" ;
+color: darkred;
+float: right;
+text-align: right;
+position: relative;
+}
+
+.altmenu li ::after {
+	content: "|"; color: darkred; font-weight: bold;
+}
+	summary {
+			outline: none;
+			
+		}
+		mark{background-color: yellow;
+			
+		}
+		iframe{  /*düzenle  ve liste görünümü ayarla*/
+		}
+	
+		float:center}
+	</style>
+</head>
+<body > <!-- Burası üst bölüm-->
+    <div class="ust" >  
+		<div>
+		  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="index.html">Muş Tanıtımı  </a>
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+		      <ul class="navbar-nav mr-auto">
+		        <li class="nav-item active"> <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Anasayfa <span class="sr-only">(current)</span></a> </li>
+		        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="web.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-user-friends"></i>WEB Tasarım</a>
+		          <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="#">Edebiyat</a>  <a class="dropdown-item" href="web.html">Batıl İnanışlar</a>
+		            
+		            <a class="dropdown-item" href="web.html">Halk Bilgisi</a> 
+				
+		            <a class="dropdown-item" href="web.html">Halk oyunları</a>
+				
+		            <a class="dropdown-item" href="web.html">Bağcılık</a> 
+			 
+		            <a class="dropdown-item" href="web.html">Çocuk oyunları</a> 
+			 
+		            <a class="dropdown-item" href="web.html">Örf ve Adetler</a> </div>
+	            </li>
+				  
+				  <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="grafik.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-torii-gate"></i> Grafik Tasarım</a>
+		          <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
+					  <a class="dropdown-item" href="grafik.html">Piknik alanları</a> 
+					  <a class="dropdown-item" href="grafik.html">Kayak</a>
+					  <a class="dropdown-item" href="grafik.html">Camiler </a>
+					  <a class="dropdown-item" href="grafik.html">Hamamlar</a>
+					  <a class="dropdown-item" href="grafik.html">Türbeler ve Yatırlar</a>
+					  <a class="dropdown-item" href="grafik.html">Geleneksel Muş Evleri</a>
+					  <a class="dropdown-item" href="grafik.html">Ören Yerleri</a>
+		           <a class="dropdown-item" href="grafik.html">Kaleler</a>
+					  <a class="dropdown-item" href="grafik.html">Hanlar</a>
+					  <a class="dropdown-item" href="grafik.html">Göller</a>
+					  <a class="dropdown-item" href="grafik.html">Kuş Gözlem Alanı</a>
+					  <a class="dropdown-item" href="grafik.html">Kilise ve Manastırlar</a>
+					  <a class="dropdown-item" href="grafik.html">Höyükler</a>
+					  <a class="dropdown-item" href="grafik.html">Köprüler</a>
+					  
+					  <div class="dropdown-divider"></div>
+		            <a class="dropdown-item" href="grafik.html">Turistik il haritası ve Gözlem Rehberi
+</a> </div>
+	            </li>
+				  
+				  <li class="nav-item"> <a class="nav-link" href="Uygulama.html"> <i class="fas fa-hiking"></i>Uygulama</a> </li>
+				  <li class="nav-item"> <a class="nav-link" href="ofis.html"><i class="fas fa-mortar-pestle"></i>Ofis Prog.</a> </li>
+				  <li class="nav-item"> <a class="nav-link" href="os.html">İşletim Sistem.</a> </li>
+				  <li class="nav-item"> <a class="nav-link" href="donanim.html">Donanım</a> </li>
+				  <li class="nav-item"> <a class="nav-link" href="ag.html">AğTasarım</a> </li>
+				  <li class="nav-item"> <a class="nav-link" href="BilgisayarMuh.html"><i class="fas fa-images"></i>BilgisayarMüh.</a> </li>
+	          </ul>
+		      <form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Sitede Ara" aria-label="Search">
+		        <button class="btn  my-2 my-sm-0 btn-secondary" type="submit"> Ara</button>
+	          </form>
+			  
+	        </div>
+
+        </div>
+	
+		<br>
+    </div>
+
+<div class="icerik">
+	
+  <div class="slayt"><hr class="yatay1">
+	  <!--burda sayfa bağlantıları işlemleri -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Anasayfa</a></li>
+          <li class="breadcrumb-item"><a href="grafik.html">Muş'ta Ne Yenir?</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Muş Yöresel Yemekler</li>
+        </ol>
+      </nav>
+	</div>
+		<!--burda yemek işlemnleri-->
+		    <div class="container-fluid">
+		      <ul id="clothingnav1" class="nav nav-tabs" role="tablist">
+		        <li class="nav-item"> <a class="nav-link active" href="#home1" id="hometab1" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Muş'ta Ne Yenir?</a> </li>
+	
+		        <!-- Dropdown Yemek -->
+		        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> Yemekler </a>
+		          <div class="dropdown-menu"> 
+					  <a class="dropdown-item" href="#bir" role="tab" id="tab1" data-toggle="tab" aria-controls="dropdownShoes">Hez Dolması</a>
+					  <a class="dropdown-item" href="#iki" role="tab" id="tab2" data-toggle="tab" aria-controls="dropdownBoots">Çorti</a>
+					  <a class="dropdown-item" href="#uc" role="tab" id="tab3" data-toggle="tab" aria-controls="dropdownBoots">Muş Böreği </a> 
+					  <a class="dropdown-item" href="#dort" role="tab" id="tab4" data-toggle="tab" aria-controls="dropdownBoots">Muş Köftesi  </a>
+					   <a class="dropdown-item" href="#bes" role="tab" id="tab5" data-toggle="tab" aria-controls="dropdownBoots">Lahana Dolması </a> 
+					</div>
+	            </li>
+				  
+				  <li class="nav-item"> <a class="nav-link" href="#paneTwo1" role="tab" id="hatstab1" data-toggle="tab" aria-controls="hats">Tatlı</a> </li>
+				  
+				   <!-- Dropdown Çorba -->
+		        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> Çorbalar </a>
+		          <div class="dropdown-menu"> 
+					  <a class="dropdown-item" href="#alti" role="tab" id="tab6" data-toggle="tab" aria-controls="dropdownShoes">Ayran Aşı</a>
+					  <a class="dropdown-item" href="#yedi" role="tab" id="tab7" data-toggle="tab" aria-controls="dropdownBoots">Helim Aşı</a>
+					</div>
+	            </li>
+				  
+				    <!-- Dropdown Salata ve Meze -->
+		        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> Salata ve Mezeler </a>
+		          <div class="dropdown-menu"> 
+					  <a class="dropdown-item" href="#sekiz" role="tab" id="tab8" data-toggle="tab" aria-controls="dropdownShoes">Uçkun Otu</a>
+					  <a class="dropdown-item" href="#dokuz" role="tab" id="tab9" data-toggle="tab" aria-controls="dropdownBoots">Güllük (Çiriş Otu) </a>
+					   <a class="dropdown-item" href="#on" role="tab" id="tab10" data-toggle="tab" aria-controls="dropdownBoots">Jağ (Cağ) Salamurası</a>
+					</div>
+	            </li>
+				  
+	          </ul>
+		      <!-- İçerikler -->
+		      <div id="clothingnavcontent1" class="tab-content">
+		        <div role="tabpanel" class="tab-pane fade show active" id="home1" aria-labelledby="hometab1">
+		          <p><p> <b><h3 style="text-align:center;">
+Muş’ta Ne Yenir? – İşte Size Muş Mutfağının En Lezzetli Yemekleri
+				  <br>
+				  
+				<img src="images/yemekler/herse.jpg" width="200" height="200"  style="border-radius: 20px 20px 20px 20px;"> 
+				<img src="images/yemekler/helimasi.jpg" width="200" height="200"  style="border-radius: 20px 20px 20px 20px;"> 
+				<img src="images/yemekler/teterhelvasi.jpg" width="200" height="200" style="border-radius: 20px 20px 20px 20px;"> 
+				<img src="images/yemekler/cagsalamura.jpg" width="200" height="200" style="border-radius: 20px 20px 20px 20px;"> 
+			
+<br></h3>
+<p> Dağlarla çevrili düz bir plato üzerine kurulu olan Muş, Doğu Anadolu bölgesinin güzide bir şehridir.
+Doğu Anadolu bölgesinde hâkim olan karasal iklimin etkisi altında olan Muş’ta kışları oldukça uzun ve soğuk geçer.
+Bu durum şehrin yemek WEB Tasarımünü de etkilemektedir.
+Geçimini hayvancılık ve tarımla sağlayan Muş halkı, yazın toplayıp kuruttuğu sebzelerle kışı geçirir. 
+Ayrıca peynir, çökelek, hayvansal yağlar, kavurma gibi yiyecekler de yazın hazırlanarak kışın ağır şartlarında tüketilir.
+Oldukça zengin bir mutfağa sahip olan ülkemizin her ilinin olduğu gibi Muş’un da kendine özgü lezzetleri vardır. 
+Hayvancılığın gelişmiş olmasından dolayı et yemeklerinin ayrı bir yeri vardır.
+Et yemeklerine bol baharatlar eşlik eder ve gelen ziyaretçileri lezzet yolculuğuna davet eder.
+Et yemeklerinin yanı sıra Muş dağlarında yetişen otlar da Muş mutfağında önemli bir yer tutar.
+<mark>Muş köftesinden hez dolmasına, keşkekten çortiye kadar tüm Muş yöresel yemekleri</mark>ne yer verdiğimiz listemize bir göz atın.
+</p>
+<p><strong>  Muş’tan Alınabilecek Yiyecekler:</strong> Doğu Anadolu’nun kahvaltıları hem zengin içerikli hem de meşhurdur.
+ <br>Muş’ta satın alabileceğiniz kahvaltılık ürünler arasında ise <i><q>tuzsuz yayın köy tereyağı, <del> katkı maddesi </del> içermeyen <ins>tamamen organik hakiki </ins> köy manda tereyağı, otlu tulum peyniri,
+bal, biber ve patlıcan kurusu, göğermiş peyniri, keçi peyniri, orcik ve <abbr title="Hakiki Meşhur Muş Üzümü ve Dut"> pekmez </abbr> </q></i>çeşitleri bulunmaktadır.
+Tüm bu ürünleri şehir merkezinde ve ilçe merkezlerindeki yöresel ürünler satan dükkânlardan satın alabilirsiniz.</p>
+<p>
+<strong> Muş’un En Meşhur Tatlısı:</strong> Muş’un geleneksel tatlılarından biri olan <mark>teter tatlısı </mark> şehri ziyaret edenlerin
+ mutlaka denedikleri tatlılardan biridir. Bununla birlikte çoğunlukla evlerde yapılan tatlılar da bulunmaktadır. 
+Ayrıca şehir merkezindeki tatlıcılarda da yine farklı tatlıları bulabilir ve paket olarak da satın alabilirsiniz. 
+Yine pastanelerde <i>tatlıların yanı sıra tuzlu kurabiyeler </i>de satın alabileceğiniz ürünler arasındadır. </p>
+<p>
+<strong>  Muş’tan Alınabilecek Doğal Ürünler: </strong> Muş’ta <em>kahvaltılık ürünler başta olmak üzere, bakliyat ürünleri,kurutulmuş biber ve patlıcan, baharatlar, pekmez çeşitleri ve meşhur örgü peyniri </em> buradan alabileceğiniz doğal ürünler
+arasında bulunmaktadır.</p>
+			<details>
+				<summary> Muş Lezzetleri...</summary><article> Muş yöresel lezzetler</article> 
+				<figure><iframe width="560" height="315" src="https://www.youtube.com/embed/CG5vPKtLDZI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </figure>
+				</details></b></p></p>
+	            </div>
+		        <div role="tabpanel" class="tab-pane fade" id="paneTwo1" aria-labelledby="hatstab1">
+		          <p><h3>Teter Helvası</h3></p>
+      <img src="images/yemekler/teterhelvasi.jpg" alt="Teter Helvası" title="Teter Helvası" width="400"><p>
+        Muş’un lezzetli et ve sebze yemeklerinden sonra sıra tatlıya geldi. Muş yöresinin en önemli tatlısı olan teter helvası, hem yapımıyla hem de lezzetiyle oldukça farklı bir tatlı. Yapımı oldukça basit olan bir o kadar da lezzetli olan teter helvası ekmek, pekmez ve cevizin birleşimi ile oluşuyor. Az malzemeyle yapılan, malzemeleri kolay bulunan tatlı, ani gelen misafirlere hemen yapılarak servis edilebilir.
+Pekmez iyice kaynatılır ve içerisine boca tereyağı eklenir. Daha sonra ekmekler ufalanır ve pişirilir. Ekmekler yumuşayınca da üzerine kaymak eklenerek servis edilir. Üzerine Fındık veya ceviz eklendiğinde ise lezzetine lezzet katılır.  Muş yöresine ait olan bu farklı tatlıyı Muş’a yolunuz düşerse siz de mutlaka denemelisiniz.
+           <br> 
+           <details>
+            <summary><mark>Malzemeler ve Yapılışı...</mark></summary> 
+            <article>    
+                <ol> <li>5 dilim esmer köy ekmeği </li>
+                <li>2 su bardağı pekmez </li>
+                <li>KABAK HELVASI </li>
+               <li> 1 su bardağı sıcak su </li>
+                <li>2 yemek kaşığı tereyağı </li>
+            <br>
+             Servisi için:
+            
+               <li> 1/2 su bardağı ince çekilmiş fındık içi </li>
+               <li>3 yemek kaşığı kaymak </li> </ol>
+            
+            5 dilim esmer köy ekmeğini, büyüklüklerine göre üç ya da dört eşit parçaya bölün ve ısıya dayanıklı bir fırın kabına dizin.DONDURMALI İRMİK HELVASI 2 su bardağı pekmezi, 1 su bardağı sıcak suyu ve 2 yemek kaşığı tere yağını TETER HELVASI sırasıyla geniş tabanlı bir tencereye aktarın. Tereyağı eriyene kadar orta ateşte 15 dakika kaynatın. Kaynattığınız pekmezi, fırın kabına yerleştirdiğiniz ekmek dilimlerinin üzerine gezdirin. Servis etmeden önce 1/2 su bardağı ince çekilmiş fındık içini serpiştirin. Servis tabağına aldığınız ekmek dilimlerini kaymakla süsleyerek bekletmeden servis yapın.<br> </article> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ti3UjGAg2Qg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </details></p>
+	            </div>
+		        <div role="tabpanel" class="tab-pane fade" id="bir" aria-labelledby="actab1">
+		          <p><h3>Hez Dolması</h3> <br>
+      <img src="images/yemekler/hezdolmasi.jpg" alt="Hez Dolmasi" title="hez dolmasi" width="400"><p>
+        Ülkemizin birçok ilinde birçok çeşit dolma yapılmakta ve herkes tarafından sevilerek tüketilmektedir. Her ilimizin kendine has bir dolma çeşidi olduğu gibi Muş yöresel yemekleri listesinde de lezzetiyle fark yaratan bir dolma vardır. Muş’un yöresel yemekleri arasında yer alan hez dolması, lahana dolmasının en güzel halidir.
+        Başka şehirlerde kıyma ile yapılan dolmanın aksine hez olması bol kuşbaşı etle yapılır. Etli, bol baharatlı ve pirinçli harç lahanaların içine doldurularak sarılır ve kısık ateşte ağır ağır pişirilir. Bu yemeğe lezzetini veren Muş dağlarında yetişen hayvanların etinden yapılmasıdır. Muş’ta misafir sofralarının en güzel yemeklerinden biri olan hez dolmasını şehirde tadılması gereken lezzetlerden biri.
+        
+           <br> <b>Nasıl Yapılır:</b> 
+           <details>
+            <summary><mark>Malzemeler ve Yapılışı...</mark></summary> 
+            <article> Yağlı kıyma pirinç ile iyice yoğrulur. Haşlanmış lahana yapraklarına sarılarak tencereye sıra ile dizilir. Tencereye sumak suyu ilave edilir. İyice piştikten sonra servis yapılır.<br> </article> 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0S77Yd58obs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			  </details></p>
+							<br> Daha fazlası
+    <br><nav>
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Keskek" target="blank">Keşkek </a> |
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Cavbelek" target="blank"> Cavbelek </a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Mirtoge" target="blank"> Mırtoğe </a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Herse" target="blank">Herse </a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Kaburga_Dolmasi" target="blank">Kaburga dolması</a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Mus_Usulu_Kenger" target="blank">Muş Usulü Kenger</a> 
+        </nav>
+	            </div>
+		
+		        <div role="tabpanel" class="tab-pane fade" id="iki" aria-labelledby="actab2">
+		          <p><h3>Çorti </h3></p>
+        <img src="images/yemekler/corti-yemegi.jpg" alt="Çorti Yemeği" title="Çorti yemeği" width="400"> <p>
+        Muş’un sevilen lezzetlerinden biri olan Çorti, lahana ve baharatla yapılan bir çeşit turşudur. Turşu olarak adlandırılmasına rağmen sirke kullanılmadan yapılır. Lahanalar üzerine baharat serpilerek bir küpün içine doldurulur ve turşu gibi ekşimesi beklenir. Muş’ta yazın yapılıp kışın tüketilen lezzetlerden biri olan Çorti, Muş’ta yetişen lahanalarla yapılırsa lezzeti de bir başka olur.
+        Çorti şehirde, köftelik, içmelik ve tandırda olmak üzere üç farklı şekilde pişiriliyor. En çok tercih edileni ise bulgurlu köftelerin soğan, reyhan ve lahana ile kaynatılması ile yapılan hali. Tam bir probiyotik kaynağı olan çorti, lezzetini baharatlardan alan oldukça lezzetli, doyurucu ve hafif bir yemek.  Başka şehirlerde pek bulmanız mümkün olmayan bu lezzeti mutlaka denemelisiniz.
+          <br>
+            <details>
+                <summary><mark>Malzemeler ve Yapılışı...</mark></summary> 
+                <article> Malzemesi :( 5 kişilik) <br>
+<ol>
+                   <li>2 kg kışlık hazırlanmış çorti ( lahana turşusu)</li> 
+                   <li> 1 kg kemikli dana eti</li>
+                    <li> su bardağı yarma (beyaz buğday) </li>
+                    <li>1 adet orta boy kuru soğan </li>
+                    <li>1 yemek kaşığı domates salçası </li>
+                    <li>1 yemek kaşığı pulbiber </li>
+                </ol> <br>
+               <b> Çorti Nasıl Yapılır </b><br>
+                Çorti ve yarma bir tencerede kaynadıktan sonra kaynama esnasında etler ilave edilir. 1 saat kaynadıktan sonra 1 adet soğan, yağ, salça ve pulbiber kavrulup ilave edilir. Kıvama gelinceye kadar pişirilir. Piştikten sonra servis edilir.<br> </article> 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tay7Ui2vgPc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </details></p>
+				<br> Daha fazlası
+    <br><nav>
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Keskek" target="blank">Keşkek </a> |
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Cavbelek" target="blank"> Cavbelek </a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Mirtoge" target="blank"> Mırtoğe </a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Herse" target="blank">Herse </a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Kaburga_Dolmasi" target="blank">Kaburga dolması</a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Mus_Usulu_Kenger" target="blank">Muş Usulü Kenger</a> 
+        </nav>
+	            </div>
+				   <div role="tabpanel" class="tab-pane fade" id="uc" aria-labelledby="actab3">
+		          <p><p><h3>Muş Böreği</h3></p>
+        <img src="images/yemekler/musboregi.jpg" alt="Muş Böreği" title="Muş Böreği" width="400"><p>
+        Et yemekleri ile ünlü bir şehir olan Muş mutfağında oldukça lezzetli hamur işleri de bulunmakta. Muş böreği de bunlardan biri. Her ne kadar hamur işi olsa da Muş’a özgü bu yemeğin içinde yine et var. Muş kahvaltılarından akşam yemeklerine her öğünde sevilerek tüketilen Muş böreği elde incecik açılan hamurun içerisine kıyma konulmasıyla hazırlanıyor.
+        Her yörenin kendine has bir böreği olduğu gibi Muş’un da Muş böreği var.  Muş böreği tadacağınız en lezzetli böreklerden bir tanesidir. Bol soğanlı, kıymalı ve baharatlı harçla hazırlanan böreğin üzerine eritilmiş tereyağı gezdirilerek fırına verilir. Piştikten sonra çıtır çıtır ağızda dağılan bir lezzet çıkar ortaya. Şehir merkezinde birçok yerde bulabileceğiniz Muş böreğini mutlaka denemelisiniz.</p>
+           <br> 
+           <details>
+            <summary><mark>Malzemeler ve Yapılışı...</mark></summary> 
+            <article> Malzemesi :( 6-8 kişilik) <br>
+<ol type="A"> Hamuru için :<li>1 paket yaş maya </li>
+    <li>1 yemek kaşığı sıvı yağ</li>
+    <li>1 tatlı kaşığı (silme) tuz </li>
+    <li>1 şişe soda </li>
+    <li>1-2 yemek kaşığı yoğurt </li>
+    <li>1 su bardağından 1 parmak eksik ılık süt</li>Aldığı kadar un<li>İç harç:
+        Kuru soğan, kıyma, tuz, baharat yada peynir
+    Arası için:
+        2 su bardağı sıvı yağ ve 1 paket margarin(margarini eritin dondurun ve suyunu dökün ardına tekrar ısıtın ve sıvı yağ öyle ekleyin)</li>
+            </ol> <br>
+           <b> Nasıl Yapılır </b><br>
+           <br> </article> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/G35hZO36R80" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </details></p>
+		<br> Daha fazlası
+    <br><nav>
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Keskek" target="blank">Keşkek </a> |
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Cavbelek" target="blank"> Cavbelek </a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Mirtoge" target="blank"> Mırtoğe </a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Herse" target="blank">Herse </a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Kaburga_Dolmasi" target="blank">Kaburga dolması</a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Mus_Usulu_Kenger" target="blank">Muş Usulü Kenger</a> 
+        </nav>
+	            </div>
+				  <div role="tabpanel" class="tab-pane fade" id="dort" aria-labelledby="actab4">
+		          <p><p><h3>Muş Köftesi </h3></p>
+        <img src="images/yemekler/muskoftesi.jpg" alt="Muş Köftesi" title="Muş Köftesi" width="400"><p>
+        Muş’un yöresel yemekleri arasında ilk sıralarda yer alan Muş köftesi, Muş evlerinde neredeyse haftada bir defa pişirilen enfes bir lezzet. Tadına doyum olmayan Muş köftesini diğer içli köftelerden ayıran en büyük özellik içi gibi hamurunun da etli olması ve kızartarak değil haşlanarak tüketilmesi.
+        İyice yoğrulan bulgurlu ve etli hamur incecik açılarak içine nefis baharatlı harç konulur. Suda haşlandıktan sonra ilk sıcağı çıkınca üzerine tereyağlı salçalı sos ve isteğe göre sarımsaklı yoğurt eklenerek servis edilir. Yapılışı zahmetli ama lezzeti efsane olan Muş köftesi, Muş’a yolunuz düşerse mutlaka tatmanız gereken lezzetlerden biridir.
+        
+            <br> <b>Nerede Yenir:</b> Eywan
+            <br> <b>Adres:</b> WEB Tasarım, 75. Yıl Cad., Merkez
+            <br>Gitmişken Başka Ne Yemeliyim: Yemeğinizin yanına yöreye özgü mezelerden alabilir, yemek sonrası farklı tatlılardan birini tercih edebilirsiniz.
+        </p>
+    
+        <details>
+            <summary><mark>Malzemeler ve Yapılışı...</mark></summary> 
+            <article> Malzemesi :( 5 kişilik) <br>
+<ol>
+    <li>2, 5 su bardağı köftelik bulgur</li>
+    <li>1 yemek kaşığı tuz </li>
+    <li>1 yumurta </li>
+    <li>150 gram kıyma (isteğe göre kıymayı artıra bilirsiniz)</li>
+    <li>100 gram tavuk kıyması (isteğe göre tavuk kıyması koymaya bilir siniz) </li>
+   <li> Sıcak su</li>
+<br> İç harcı:<li> 100 gram tavuk kıyması </li>
+    <li>2 adet orta boy soğan </li>
+    <li>Pul biber </li>
+    <li>Kara biber </li>
+    <li>Kekik </li>
+    <li>Tuz </li> <br>Sosu için:<br> Sıvı yağ <br> Kaynatmak için <br> Tuz,Sıcak su </ol> 
+            <p></p><br>
+           <b> Nasıl Yapılır </b><br>
+           İlk önce iç harcı soğanları küçük küçük doğruyoruz kıymayı ve baharatları katıp ve son olarak yağını katıp kavuruyoruz iyice kavrulan iç harcı soğuması için kenara alıyoruz ondan sonra bulguru kıymayı, tuzu, sıcak suyu yumurtayı ekleyip 15 dk yoğuruyoruz sonrada ceviz büyüklüğünde parçalar alıp elimizde yuvarlanıp içini açıp 1 çay kaşığı iç harcı koyup iyice kapatıp yuvarlıyoruz hiç çatlak olmasın yoksa haşlayınca açıla bilir hepsini yuvarladıktan sonra sıcak suyu geniş bir tencereye alıyoruz üstüne gelecek şekilde tuzu ekleyip kaynatıyoruz köfteleri ekleyip 15 dk kaynatıyoruz piştiğini siz anlarsınız sonra. Tabağa alıp sosunu hazırlayalım yağını döküp yiyebilir siniz afiyet olsun.<br> </article> 
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/buBEV-cRsAI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </details></p>
+	<br> Daha fazlası
+    <br><nav>
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Keskek" target="blank">Keşkek </a> |
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Cavbelek" target="blank"> Cavbelek </a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Mirtoge" target="blank"> Mırtoğe </a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Herse" target="blank">Herse </a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Kaburga_Dolmasi" target="blank">Kaburga dolması</a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Mus_Usulu_Kenger" target="blank">Muş Usulü Kenger</a> 
+        </nav>
+	            </div>
+				  <div role="tabpanel" class="tab-pane fade" id="bes" aria-labelledby="actab5">
+		          <p><p><h3>Domatesli Lahana Dolması </h3></p><img src="images/yemekler/lahanadolmasi.jpg" alt="Domatesli Lahana Dolmasi" title="Domatesli lahana Dolması" width="400"><p>
+        Eskilerden günümüze kadar gelen ve Muş yöresel yemeklerinin arasında yerini koruyan bir lezzet olan domatesli lahana dolması, lahana dolmasının en güzel halidir.  Muş halkı tarafından sıklıkla tüketilen domatesli lahana dolması, özellikle kış aylarında akşam yemeği sofralarını süsler. Hem lezzetiyle hem de görüntüsüyle iştah açan yemek, Muş’un parmak ısırtan lezzetlerinden biridir.
+        Dolma denilince insanın aklına öncelikle pirinç gelir ancak bu dolma bu algıyı yıkmaktadır. Bulgurla ve kıyma ile yapılan dolma bulgurla yapılan dolmaların daha lezzetli olduğunu ispatlar nitelikte. Kıyma ve bulgurdan oluşan harç lahana yapraklarının içine konularak sarılır. Tencereye domatesle birlikte konularak pişirilir. Servis sırasında da üzerine kızdırılmış tereyağı gezdirilir ve ortaya damakları şenlendiren bir lezzet çıkar. Dolmanın asıl tadını ise içindeki domates suyu verir. Size bildiğiniz dolmaları unutturacak olan domatesli lahana dolmasını mutlaka denemelisiniz.
+        
+            <br>
+        <p>
+			<details> 
+                <summary><mark>Malzemeler ve Yapılışı...</mark></summary> 
+                <article> Malzemesi :( 5 kişilik) <br>
+    <ol>
+    <li> Büyük baş lahana </li>
+    <li>500 gr yağlı kıyma </li>
+    <li>400 gr ince bulgur </li>
+   <li> 1 yemek kaşığı reyhan </li>
+   <li> 1 tatlı kaşığı pulbiber </li>
+   <li>1 yemek kaşığı tuz </li>Salata harcı<li> 1 kg domates </li>
+   <li> 300 gr yeşil biber </li>
+    <li>İki büyük baş soğan </li>
+    <li>1 tatlı kaşığı reyhan,pulbiber,karabiber, </li>
+    <li>1 tatlı kaşığı domates salçası </li>
+   <li> Tuz ve lahana sapları</li>
+                </ol> <br>
+               <b> Kırkçikli Kelem Dolması Nasıl Yapılır:<br>
+
+                Lahanalar haşlanır bulgur, kıyma, tuzla  güzelce yoğrulur. Yavaş yavaş su ilave edilerek kıvama gelinceye kadar yoğrulur. Serçe parmağı büyüklüğünde  (kalınlığında)  küçük küçük sarılır. Tencerenin 4 parmak genişliğinde dolacak kadar doldurulur. Salata malzemeleri çoban salatası şeklinde doğranıp, baharatları eklenir, sarmalara kat kat ilave edilir ve pişirilmeye bırakılır. Dolmalar piştikten sonra zevke göre tere yağı veya pulbiberli yağ ve yoğurt eklenerek servis edilir.</b><br>
+               <br>  
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/Om7tGfMYTbY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </article> </details></p>
+<br> Daha fazlası
+    <br><nav>
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Keskek" target="blank">Keşkek </a> |
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Cavbelek" target="blank"> Cavbelek </a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Mirtoge" target="blank"> Mırtoğe </a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Herse" target="blank">Herse </a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Kaburga_Dolmasi" target="blank">Kaburga dolması</a>|
+        <a href="https://blog.biletbayi.com/musun-yoresel-yemekleri.html/#Mus_Usulu_Kenger" target="blank">Muş Usulü Kenger</a> 
+        </nav>
+	            </div>
+				
+				  <div role="tabpanel" class="tab-pane fade" id="alti" aria-labelledby="actab6">
+		          <p><h3>Ayran aşı</h3></p>
+      <img src="images/yemekler/ayranasi.jpg" alt="ayran aşı" title="Ayran Aşı" width="400"><p>
+        Bu kadar ağır et yemeğinden önce sıcak bir çorba içmeden olmaz. Soğuk kış akşamlarında içinizi ısıtacak çorbaların aksine sıcak günlerde serinlemek için içilen Ayran aşı, birçok yörede olduğu gibi Muş yöresinde de geleneksel çorbaların arasında yerini alıyor. Muş halkı tarafından çok sevilen ve gelen misafirlere de ikram edilen çorba hem yapımının kolay olması hem de lezzetli olması nedeniyle çok fazla tercih ediliyor.
+Besin değeri oldukça yüksek olan ancak kalorisi düşük olan bu çorba oldukça da ekonomik. Önceden haşlanan nohut ve buğday bir kapta karıştırılır ve soğumaya bırakılır. Soğuyan karışımın üzerine ayrı bir kapta pürüzsüz hale gelene kadar çırpılan süzme yoğurt eklenir. Son olarak üzerine kuru nane eklenerek servis edilir. Sıcak yaz akşamlarında serinlemenize yardım edece bu çorbayı mutlaka denemelisiniz.
+<br>
+    <b>Nerede Yenir:</b> https://www.instagram.com/kelleci_baba/
+    <br> <b>Adres: Sunay, 9. Sk., Kurtuluş Cad., Merkez </b>
+    <br>Gitmişken Başka Ne Yemeliyim: Buranın kelle paça çorbası meşhurdur. Ayrıca kavurmasını da deneyebilirsiniz.
+           <br> 
+           <details>
+            <summary><mark>Malzemeler ve Yapılışı...</mark></summary> 
+            <article>    
+				Ağrı'da Ayran Aşı çorbasına Gırar da denir. Yarpuz ise ballıbabagillerden, çiçekleri birbirinden ayrı halka durumunda, nane türünden, kısa saplı, az veya çok tüylü, güzel kokulu bir bitkidir. 
+				Ayran Aşı Malzemeleri Nelerdir? 
+				<ol style="font-weight:bold; ">
+					<li>1 yumurta </li>
+					<li>2 yemek kaşığı un </li>
+					<li>5 su bardağı yoğurt ya da ayran </li>
+					<li>>1 su bardağı aşurelik buğday </li>
+					<li>1 çay bardağı haşlanmış nohut </li>
+					<li>1 demet yarpuz ya da nane </li>
+					<li>>Tuz </li>
+					<li>Su</li>
+				</ol> <br>
+				Un, yumurta, yoğurt suyla çırpılır. Hazırlanan karışımın içine ıslatılmış buğday ve nohut katılarak kaynayıncaya kadar karıştırılır sonra içine tuz ilave edilir. Buğdaylar yumuşayınca ocaktan alınır ve üzerine doğranmış yarpuz veya nane serpilerek soğuk ya da sıcak servis edilir. Bingöl’deki usulünde haşlanmış kenger kökü ilave edilmektedir. Ayran aşı Iğdır’daki usulünde bulgurla yapılmakta ve içine ebegümeci, evelik, pancar yaprağı gibi yeşillikler ile sarımsak da konulmaktadır. Tencereye su konularak bulgur kaynatılır. Buna ince ince doğranmış bütün otlar ilave edilip iyice pişirilir. 4 kaşık un suda ezilerek karışıma ilave edilir. Diğer tarafta ayran hazırlanır, sarımsaklar ezilerek ayrana katılır. Pişirilen karışıma ayran eklenir. Bir iki taşım kaynatılıp ateşten alınır. Yarpuz ya da nanenin yazın tazesi, kışın kurusu kullanılır. Ayran çorbası kışın sıcak, yazın soğuk olarak tüketilmektedir. Batman’daki ayran aşında buğday iyice piştikten sonra ayran ilave edilir, biraz daha kaynatılır ve dinlenmeye bırakılır. Soğuduktan sonra üzerine pekmez ya da tuz dökülerek yenir.<br> </article> 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rypwbIWk3Fw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </details></p>
+	            </div>
+				  
+				  <div role="tabpanel" class="tab-pane fade" id="yedi" aria-labelledby="actab7">
+		          <p><h3>Helim aşı</h3></p>
+			<img src="images/yemekler/helimasi.jpg" alt="helim aşı" title="Helim Aşı" width="400"><p>
+				Ülkemizin her yöresinin kendine has çorbaları vardır. Doğu Anadolu’nun birçok ilinin yöresel yemekleri arasında yerini alan Helimaşı çorbası, Muş geleneksel mutfağı listesine de adını yazdırmıştır.  Muş’un soğuk kış günlerine yakışır bir çorba olan Helimaşı çorbası, Muş sofralarında en çok yerini alan çorbalardan biri.
+				Mercimek, haşlanmış nohut, soğan ve et ile hazırlanan bu lezzet bombası, aynı zamanda içerisinde bulunan malzemelerle de tam bir vitamin deposu. Tadına bakanların bir daha vazgeçemediği çorba salçalı, kırmızı görüntüsü ile bile insanın iştahını aşıyor. Muş’ta enemeniz gereken yemeklerin başında gelen bu çorbayı mutlaka denemenizi tavsiye ederiz.
+				 <details>
+				  <summary><mark>Malzemeler ve Yapılışı...</mark></summary> 
+				  <article>    
+					Malzemesi :( 5 kişilik)
+<br>
+				<ol>	<li>1 çay bardağı nohut </li>
+					<li>>1 çay bardağı kuru fasuliye </li>
+					<li>1 çay bardağı yeşil mercimek </li>
+					<li>2 çay bardağı yarma  (Beyaz Buğday) </li>
+					<li>1 kg yağlı kemikli kuzu eti</li>
+					<li>1 büyük baş soğan </li>
+					<li>2 ad yeşil biber </li>
+					<li>1 yemek kaşığı biber salçası </li>
+					<li>Bir tatlı kaşığı karabiber </li>
+					<li>1 tatlı kaşığı pul biber </li>
+				</ol>
+				Yapılışı: Et ve bütün malzemeler ( nohut,fasulye,yarma)  1 saat düdüklü tencerede pişirildikten sonra yeşil biber, soğan, yağ ve salça ile kavrulur. Baharatlar eklenir. Daha sonra mercimekle birlikte bir tencerede tüm malzemeler buluşur. 30-45 dk kaynatılır ve daha sonra servis edilir..<br> </article> 
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/YidVeCie8MA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				  </details></p>
+	            </div>
+				  
+				   <div role="tabpanel" class="tab-pane fade" id="sekiz" aria-labelledby="actab8">
+		          <p><h3>Uçkun Otu</h3></p>
+      <img src="images/yemekler/uckun.jpg" alt="Uçkun" title="Uçkun" width="400" style="border-radius: 50px 50px 50px 50px;flex-wrap:wrap-reverse"><p>
+        <p style="float: right">Muş mutfağında et yemekleri kadar otlar da meşhurdur. İlkbaharda Muş dağlarında yetişen bir bitki olan Uçkun, yöre halkı tarafında toplanır ve meyve niyetine tüketilir. Birçok yörede bilinmese de kivi ile neredeyse aynı tada sahip olan bu ot kırmızı ve kahverengi çiçek açar. Kanser hücrelerini yok etmeye kadar birçok faydası olan Uçkun otu yıllardır şifa niyetine tüketilmektedir. </p>
+
+İçerisinde C, A, B1, B2, E ve K vitaminleri bulunan bu ot, neredeyse tüm Doğu Anadolu illerinde olduğu gibi Muş pazarlarında da önemli bir yere sahiptir. Mide rahatsızlıklarına, şeker ve tansiyon gibi hastalıklara iyi gelen iyi gelen Uçkun otunun kabukları bile tam bir şifa deposu. Doğu Anadolu pazarlarına yolunuz düşer de Uçkun otu karşınıza çıkarsa mutlaka bir bağ alın.
+           <br> </p>
+	            </div>
+				   <div role="tabpanel" class="tab-pane fade" id="dokuz" aria-labelledby="actab9">
+		          <p><h3>Güllük (Çiriş otu)</h3></p>
+			<img src="images/yemekler/cirisotu.jpg" alt="Güllük" title="Güllük" width="400" style="border-radius: 50px 50px 50px 50px;"><p>
+				Özellikle Doğu Anadolu bölgesinde yetişen güllük, yabani pırasa, dağ pırasası ve çiriş otu olarak da adlandırılan bir bitkidir. Geleneksel Muş mutfağında da yerini alan Güllük tam bir şifa deposudur. Nisan ve Mayıs aylarında pazarlarda, marketlerde, manavlarda yerini alan çiriş otunun, ister kavurması, ister böreği, ister yemeği yapılır. Hatta bu otun faydalarını bilenler yapraklarını kaynatıp çayını bile yapar.
+
+İçerisine çeşitli malzemeler konularak akşam yemeği olarak tüketilen, kavrulduktan sonra üzerine yumurta kırılarak kahvaltıda tüketilebilen çiriş otu, içerdiği C vitamini ile hastalıklardan korur, idrar yolu enfeksiyonlarına iyi gelir, sivilce ve egzama gibi cilt sorunlarını düzeltir, saç dökülmelerini azaltır, annelerin sütünü arttırır. Vücudun neredeyse her bölgesi için faydalı olan bu bitkiyi Muş’ta birçok yerde bulabilirsiniz.
+				 <details>
+				  <summary><mark>Malzemeler ve Yapılışı...</mark></summary> 
+				  <article>    
+					Malzemesi :( 5 kişilik)
+<br>
+<ul type="square">
+   <li> 2 yemek kaşığı zeytinyağı </li>
+   <li> 1 soğan </li>
+   <li> 1 tatlı kaşığı domates salçası </li>
+   <li> Yarım kg çiriş otu </li>
+    <li>1.5 yemek kaşığı pilavlık bulgur </li>
+   <li> Tuz </li>
+    <li>Karabiber </li>
+</ul>
+Çiriş Otu Yemeği Nasıl Yapılır? <br>
+
+    Zeytinyağını bir tencereye alıp ısıtın. Üzerine soğanı yemeklik doğrayıp kavurun.
+    Domates salçasını ekleyip kavurmaya devam edin. Yemeğin içerisine iri doğradığınız çiriş otlarını, bulgur ve tuzu ilave edin.
+    Üzerine çıkacak kadar sıcak su ilave edip tencerenin kapağını kapatın. Bulgurlar yumuşayınca karabiberi ekleyip karıştırın.
+    Ocaktan alıp 10-15 dakika dinlendirdikten sonra servis yapın. Şimdiden afiyet olsun.<br>
+<p>
+Çiriş Otu Yemeğinin Püf Noktaları Nelerdir?
+</p> <br>
+    Yabani otlar arasında bulunan çiriş otunun köklerini ve uç kısımlarını mutlaka temizleyin.
+    Tarife başlamadan önce bol su ile durulayın ve üzerinde toprak kalmamasına dikkat edin.
+    Pişirme esnasında aromasını arttırmak için birkaç damla limon suyu ilave edebilirsiniz.
+    Çiriş otu yemeğini, yoğurtla birlikte servis edebilirsiniz.
+<br>
+1 Porsiyon Çiriş Otu Yemeği Kaç Kaloridir?
+<br>
+    Çiriş otu yemeğinin bir porsiyonu, 165 kaloridir. Zengin besin değerleriyle sunulan bu tarifi, diyet listelerine ekleyebilirsiniz.
+
+Siz de akşam öğünlerinde sebze yemeklerine yer vermek istiyorsanız, kalp sağlığını korumasıyla bilinen türlü tarifine göz atabilirsiniz. Beğendiğiniz tarifleri sevdiklerinizle paylaşabilirsiniz.
+<br> </article> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KExLJ0nTJEs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				  </details></p>
+	            </div>
+				  <div role="tabpanel" class="tab-pane fade" id="on" aria-labelledby="actab10">
+		          <p> <h3>Cağ Salamurası</h3></p>
+                <img src="images/yemekler/cagsalamura.jpg" alt="Cağ Salamurası" title="Cağ Salamurası" width="400" style="border-radius: 50px 50px 50px 50px;"><p>
+                    Muş halkının kışı geçirmek için hazırladığı yiyeceklerden biri olan cağ, yöre halkı tarafından yazın Muş dağlarında toplanır ve kışın tüketmek için turşu gibi tenekelere konularak stoklanır ve kışın sofralarda yerini alır.  Muş pazarlarında sıklıkla yerini alan bitkilerden biri olan cağ, kırsal kesimlerde yaşayan halkın önemli geçim kaynaklarından biridir.
+
+Sağlık açısından da oldukça faydalı olan cağ salamurası, kışın kızgın tavaya biraz yağ dökülerek pişirilir ve unla karıştırıldıktan sonra üzerine yumurta kırılır. İyice pişirilerek servis edilir. Kahvaltıdan akşam yemeğine tüm öğünlerde tüketilebilen, yöre halkı tarafından çok sevilen bu lezzeti mutlaka denemelisiniz
+                     <details>
+                      <summary><mark>Malzemeler ve Yapılışı...</mark></summary> 
+                      <article>    
+                        Malzemesi :( 5 kişilik)
+    <br>
+    
+    Dağlarda yetişen bir bitkidir. Yazın toplanır. Turşu gibi tenekelerde veya başka kaplarda tutulur. Kızgın tavaya biraz yağ dökülerek içinde pişirilir, üzerine bir kaç tane yumurta kırılır unla karıştırılır, iyice piştikten sonra kaplara konur.
+    <br> </article> 
+    <img src="images/yemekler/cagsalamura2.JPG" alt="cağ salamurası" title="cağ salamurası" style="border-radius: 50px 50px 50px 50px;" width="400">
+                      </details></p>
+	            </div>
+	          </div>
+  </div>
+</div>
+		
+<div class="altmenuler">
+	<div class="container">
+		<div class="row" style="padding: 5px 1px 1px -50px;">
+		 <div class="col-md-9"> 
+ <ul class="altmenu">
+	 <li> <a href="İndexZahir.html">Anasayfa</a></li>
+     <li> <a href="BilgisayarMuh.html">Bilgisayar Mühendisliği</a></li> 
+     <li> <a href="web.html">WEB Tasarımı</a> </li>
+     <li> <a href="ag.html">Ağ Tasarımı</a> </li>
+	 <li> <a href="Uygulama.html"> Uygulama Programları</a></li>
+	 <li> <a href="grafik.html"> Grafik Tasarım</a> </li>
+	 <li> <a href="donanim.html">Bilgisayar Donanımı</a> </li>
+	 <li> <a href="ofis.html">Ofis Programları </a> </li>
+	 <li> <a href="os.html">İşletim Sistemleri</a> </li>
+</ul> 
+	   </div>
+			
+		 <div class="col-md-3" > 
+			<!-- harita yerleştir -->
+	 <iframe  src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d99592.48936672148!2d41.42099749444613!3d38.73467401472609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x4072e5f14470dde1%3A0xb124c9666a09660f!2zTXXFnywgTXXFnyBNZXJrZXovTXXFnw!3m2!1d38.734561!2d41.491037999999996!4m5!1s0x4072e5f14470dde1%3A0xb124c9666a09660f!2zTXXFnywgTXXFnyBNZXJrZXovTXXFnw!3m2!1d38.734561!2d41.491037999999996!5e0!3m2!1str!2str!4v1617298651156!5m2!1str!2str" width="240" height="160" style="border:0;outline: none; border-radius: 10px;margin:5px -10px -5px 1px; max-width: 100%;" allowfullscreen="" loading="lazy"  ></iframe>  
+	<!--burda icon özelikleri kullan font tagı kaldır
+	-->			</div>
+		</div>	
+		 
+	<div class="row">
+	   
+	   <div class="col-md-12">			 
+			 <br><p class="fa-2x ">
+			 <i class="fab fa-facebook-f" ></i> <i class="fab fa-instagram">
+			 </i> <i class="fab fa-twitter"></i> <i class="fab fa-youtube"></i>
+			  <i class="fab fa-whatsapp"></i> <i class="fas fa-phone-alt"></i>
+			   <i class="fas fa-envelope-open"></i> </p>  
+			</div>
+
+		</div>
+	</div>
+	</div>
+	
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+<script src="js/tabbuton.js"></script>
+</body> </html>
