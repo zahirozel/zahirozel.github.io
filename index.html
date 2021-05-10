@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bilişim Günlüğü "ZahirÖZEL" </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slider.css">
+	<!--font Awesome iconları sayfada kulanma linki-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tomorrow&display=swap" rel="stylesheet">
+<!--bu yazı stilllerini  beğendim
+font-family: 'Tomorrow', sans-serif;
+font-family: "Josefin Sans", sans-serif; -->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link href="bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+    
+    	
+	<style>
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{ /* sayfa içeriğinin kenar ve sayfa bölümlendirme ayarları  ust- icerik ve altmenuler diye*/
+    font-style: none; 
+	font-size: 15px;
+    font-family: 'Tomorrow', sans-serif;
+	display: flex;
+    flex-direction: column;
+    background-color:white; opacity: 0.9;
+    border-radius: 40px 20px 10px 10px ;
+    padding: 5px 15px 0px 15px;
+	line-height: 1.5em;
+    } 
+html { 
+    
+    font-style: none;
+	font-size: 15px;
+	font-family: "Tomorrow", sans-serif; 
+    background: url(images/arkaplan2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+    overflow-x: hidden; 
+	margin: 12px 5% 0px 5% ;
+}
+		
+/* nav temaya uygun hale getir */
+nav li :hover { background-color:orange;
+	color:white;
+	vertical-align: -10px;
+	line-height: 2rem;
+	margin: -5px;
+	padding: -15px;
+}
+/*
+<!--deneme işlemleri -->
+nav li { background-color: red;
+	color: azure;
+}  */
+.dropdown-item::before{ content: ">" ;
+color: darkred;
+float: right;
+text-align: right;
+position: relative;
+}
+
+.altmenu li ::after {
+	content: " | "; color: darkred; font-weight: bold;
+}
+canvas {display:block;
+	position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    padding:0px;
+	z-index: -2;}
+        
+      
+        
+	</style>
+</head>
+<body >
+
+	<!-- Burası üst bölüm-->
+    <div class="ust" >  
+		<div>
+		  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="index.html"> <img src="logo.png" alt="Muş" height="25px"> ZahirÖZEL	  </a>
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+		      <ul class="navbar-nav ml-auto">
+		        <li class="nav-item active"> <a class="nav-link" href="index.html"><i class="fas fa-home"></i>Anasayfa <span class="sr-only">(current)</span></a> </li>
+		        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="web.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> WebTasarım</a>
+		          <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> <a class="dropdown-item" href="web.html">HTML</a>  <a class="dropdown-item" href="web.html">CSS</a>
+		            
+		            <a class="dropdown-item" href="web.html">Dreamweaver</a> 
+				
+		            <a class="dropdown-item" href="web.html">WordPress</a>
+				
+		            <a class="dropdown-item" href="web.html">Joomla</a> 
+			 
+		            <a class="dropdown-item" href="web.html">Javascript</a> 
+			 
+		            <a class="dropdown-item" href="web.html">Django</a> </div>
+	            </li>
+				  
+				  <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="grafik.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  GrafikTasarım</a>
+		          <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
+					  <a class="dropdown-item" href="#">Photoshop</a> 
+					  <a class="dropdown-item" href="#">Fireworks</a>
+					  <a class="dropdown-item" href="#">İlustrator </a>
+					  <a class="dropdown-item" href="#">İndesign</a>
+					 
+					  <div class="dropdown-divider"></div>
+		            <a class="dropdown-item" href="#">GrafikDiğer</a> </div>
+	            </li>
+				  
+				  
+                  <li class="nav-item"> <a class="nav-link" href="#"> UygulamaProg. </a> </li>
+                  <li class="nav-item"> <a class="nav-link" href="#"> OfisProg. </a> </li>
+				  <li class="nav-item"> <a class="nav-link" href="#">İşletimSistem.</a> </li>
+				  <li class="nav-item"> <a class="nav-link" href="#">Donanım</a> </li>
+				  <li class="nav-item"> <a class="nav-link" href="#">AğTasarım</a> </li>
+				  <li class="nav-item"> <a class="nav-link" href="#">BilgisayarMüh.</a> </li> 				 
+	          </ul>
+		      <form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Sitede Ara" aria-label="Search">
+		        <button class="btn  my-2 my-sm-0 btn-secondary" type="submit"> Ara</button>
+	          </form>
+			  
+	        </div>
+	      </nav>
+
+        </div>
+	<hr class="yatay3">
+		<br>
+    </div>
+
+	
+<div class="icerik">
+	
+	<div class="slayt"><hr class="yatay1">
+                 
+<div class="carrousel">
+			<h2>Sayfa İçeriklerimiz</h2>						
+			<input type="radio" name="slides" id="radio-1" checked>
+			<input type="radio" name="slides" id="radio-2">
+			<input type="radio" name="slides" id="radio-3">
+			<input type="radio" name="slides" id="radio-4">
+			<ul class="slides">
+				 <li class="slide">
+            <p>
+               <q>Web Tasarım</q> 
+              <span class="author">
+              <img src="logo.png">
+               web tasarım işlemleri
+              </span>
+            </p>
+           </li>        
+            <li class="slide">
+              <p>
+                <q>Grafik Tasarım</q> 
+                <span class="author">
+                  <img src="logo.png">
+                  Grafik Tasarım işlemleri
+                </span>
+              </p>
+           </li>
+          <li class="slide">
+             <p>
+                <q>Uygulama Programları</q> 
+                <span class="author">
+                <img src="logo.png">
+                Ses ve Görüntü işleme Programları
+                </span>
+             </p>
+          </li>
+          <li class="slide">
+            <p>
+              <q>Ofis Programları</q> 
+              <span class="author">
+                <img src="logo.png">
+                Ofis Programları uygulamaları
+              </span>
+            </p>
+           </li>
+			</ul>
+			<div class="slidesNavigation">
+				<label for="radio-1" id="dotForRadio-1"></label>
+				<label for="radio-2" id="dotForRadio-2"></label>
+				<label for="radio-3" id="dotForRadio-3"></label>
+				<label for="radio-4" id="dotForRadio-4"></label>
+			</div>
+</div>		
+        <br>
+        
+        <hr class="yatay2">
+	</div>
+	
+burayada
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+
+</div>
+	
+	
+<!-- alt bölümde-->
+	
+<div class="altmenuler">
+	<div class="container">
+		<div class="row" style="padding: 5px 1px 1px -50px;">
+		 <div class="col-md-9"> 
+                          <br>
+ <ul class="altmenu">
+	 <li> <a href="İndexZahir.html">Anasayfa</a></li>
+     <li> <a href="BilgisayarMuh.html">Bilgisayar Mühendisliği</a></li> 
+     <li> <a href="web.html">WEB Tasarımı</a> </li>
+     <li> <a href="ag.html">Ağ Tasarımı</a> </li>
+	 <li> <a href="Uygulama.html"> Uygulama Programları</a></li>
+	 <li> <a href="grafik.html"> Grafik Tasarım</a> </li>
+	 <li> <a href="donanim.html">Bilgisayar Donanımı</a> </li>
+	 <li> <a href="ofis.html">Ofis Programları </a> </li>
+	 <li> <a href="os.html">İşletim Sistemleri</a> </li>
+</ul> 
+	   </div>
+			
+		 <div class="col-md-3" > 
+			<!-- harita yerleştir -->
+	 <iframe  src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d99592.48936672148!2d41.42099749444613!3d38.73467401472609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x4072e5f14470dde1%3A0xb124c9666a09660f!2zTXXFnywgTXXFnyBNZXJrZXovTXXFnw!3m2!1d38.734561!2d41.491037999999996!4m5!1s0x4072e5f14470dde1%3A0xb124c9666a09660f!2zTXXFnywgTXXFnyBNZXJrZXovTXXFnw!3m2!1d38.734561!2d41.491037999999996!5e0!3m2!1str!2str!4v1617298651156!5m2!1str!2str" width="240" height="160" style="border:0;outline: none; border-radius: 10px;margin:5px -10px -5px 1px; max-width: 100%;" allowfullscreen="" loading="lazy"  ></iframe>  
+	<!--burda icon özelikleri kullan font tagı kaldır
+	-->			</div>
+		</div>	
+		 
+	<div class="row">
+	   
+	   <div class="col-md-12">			 
+			 <br><p class="fa-2x ">
+			 <i class="fab fa-facebook-f" ></i> <i class="fab fa-instagram">
+			 </i> <i class="fab fa-twitter"></i> <i class="fab fa-youtube"></i>
+			  <i class="fab fa-whatsapp"></i> <i class="fas fa-phone-alt"></i>
+			   <i class="fas fa-envelope-open"></i> </p>  
+			</div>
+
+		</div>
+	</div>
+	</div>
+	
+    <div  style="position: absolute;top: 0;left: 0;bottom: 0;">
+	 <canvas id="canvas"></canvas>
+	</div>
+	<!-- matrix efect script burda-->
+	
+<script> 
+	canvas.height = window.screen.height;
+canvas.width = window.screen.width;
+
+var columns = []
+var character =0;
+for (i = 0; i < 256; columns[i++] = 1);
+
+function step() {
+    canvas.getContext('2d').fillStyle = 'rgba(0,0,0,0.05)';
+    canvas.getContext('2d').fillRect(0, 0, canvas.width, canvas.height);
+   
+    canvas.getContext('2d').fillStyle = '#0F0';
+    columns.map(function (value, index) {
+          canvas.getContext('2d').fillText(character, //text
+                                         index * 10, //x
+                                         value //y
+                                        );
+      if(character==0)  
+      character=1;
+      else
+        character=0;
+        columns[index] = value > 758 + Math.random() * 1e4 ? 0 : value + 10
+    })
+}
+setInterval(step, 33)
+	
+	</script>
+    
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+<script src="js/tabbuton.js"></script>
+
+
+</body> </html>

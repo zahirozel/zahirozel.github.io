@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+	margin: 0;
+}
+body{  /* sayfa içeriğinin kenar ve sayfa bölümlendirme ayarları  ust- icerik ve altmenuler diye*/
+            display: flex;
+            flex-direction: column;
+  			font-family: "Tomorrow", sans-serif; 
+	        background-color:white; opacity: 0.9;
+            border-radius: 40px 20px 10px 10px ;
+            padding: 5px 20px 0px 15px;
+	
+}
+html{ font-family: "Tomorrow", sans-serif; 
+             /* background: url(images/arkaplan2.jpg) no-repeat center center fixed; 
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+              overflow-x: hidden; 
+	          margin: 20px 40px 0px 40px ; */
+	
+}
+
+/* flex özeliği kulanarak sayfayı üst, icerik ve altbolum diye 3'e ayırdım */
+.ust{   text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color:lightgray;
+	position: fixed;
+    left: -10px;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    padding:5px;
+	z-index: 2;
+            }
+.icerik {   padding: 20px 0px 50px 0px;
+            background-color: white;
+            flex: 1;
+            text-align: left;
+			z-index: 1;
+			font-family: "Josefin Sans", sans-serif;
+        }
+ .altmenuler{
+    background-color:lightblue;
+	border-radius: 20px 20px 0px 0px ;
+    left: 0px;
+    bottom: 0px;
+    margin: 0px -15px 0px -15px;
+	font-family: 'Tomorrow', sans-serif;
+	 
+	 
+ }  /* slayt metinlerine zemin rengi ekledi  */
+.vurgu{ background-color: white;
+		border-radius:5px;
+		font-size: 1.75rem;
+		text-transform:capitalize;
+		}
+.vurgu2{ background-color: white;
+		border-radius:5px;
+			font-size: 1.25rem;
+			text-transform: capitalize;
+		}
+.slayt{ margin: 0px 0px 0px 0px;
+		}
+#tabbuton article {text-align: left;}
+	summary {
+			outline: none;
+		}
+	mark{background-color: yellow;
+			}
+		
+
+
+/* ekrana göre  öğeler ve öğe özelikelri değişmektedir
+görünürlüğü , metin kutusu özelikleri - en son son ayarlamalar yapılacak*/
+@media (min-width: 600px){
+#logo{visibility: visible;}
+#logo2{visibility: hidden;}
+#key{ font-size: 20px; }
+#mic{ font-size: 20px; }  
+#kutu {
+display: flex;
+	width: 100%;
+}
+#kutu > div{
+background-color:transparent;
+font-size: 14px;
+margin: 1px;
+padding: 1px;
+display:inline-block;
+	text-align: center;
+	
+} 
+}
+@media (max-width: 599px){
+#logo{visibility: hidden;}
+#logo2{visibility: visible;}
+#key{ font-size: 15px;}
+#mic{ font-size: 15px;}
+* {font-size: 0.9rem;}
+.slogan{ visibility: hidden;}
+.ustmenu .sutun{
+        float:left;
+        width:30%;
+        padding:0px;
+        font-size: 0.5rem;
+} 
+}
+
+
+#logo{text-align: center;margin-top: 3%;}
+#logo2{text-align: center;margin-top: -5%;}
+.sol{ }
+.sag{ display: inline-block; text-align: right; float: right;}
+.yatay1{
+		border-bottom: solid darkred 4px;
+		margin-bottom: 0px;
+		padding-bottom:-1px; 
+		}
+
+.yatay2{
+		border-bottom: solid darkred 4px;
+		margin-top: -1px;
+		padding-bottom:0px;
+		}
+.yatay3{
+		border-bottom: solid darkred 4px;
+		margin-bottom: 0px;
+		padding-bottom:-1px;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+		}
+article {text-align: left;
+}
+/* bunu şimdilik kulanmadım, bootstrap menü kulandım en son kulanmaycaksa sil---
+    .ustmenu{ 
+        margin: 0px;
+        padding: 0px;
+        text-align: right;
+		font-family: 'Tomorrow', sans-serif;
+    }
+    .ustmenu li{
+        display:inline-block;
+        list-style-type: none;
+        font-size: 14;
+		font-family: 'Tomorrow', sans-serif;
+    }
+    .ustmenu li a {
+        color: darkgrey;
+        display: block; padding: 20px 5px;
+        text-decoration:black;
+        margin: 0px;
+        color:darkgrey;text-decoration:none;padding-bottom:5px
+			font-family: 'Tomorrow', sans-serif;
+    }
+    .ustmenu li a:hover{
+        border-bottom:2px solid #70757a;color:#000
+    }     
+//burda altmenü öğeleri  işlemi//
+    .ustmenu>li>div{
+        position:absolute;
+        display:block;
+        width:80%;
+        top:60px;
+        right:0;
+        opacity:0;
+        -webkit-transition:all .1s;
+        transition:all 100ms;
+        box-shadow: 0 2px 6px rgba(211,211,211,1);
+        -webkit-box-shadow: 0 2px 6px rgba(211,211,211,1);
+        background-color: whitesmoke;
+        border-radius: 10px;
+    }
+    .ustmenu>li:hover>div{
+        opacity:1;
+    
+    }
+    .ustmenu .sutun{
+        float:left;
+        width:30%;
+        padding:1px;
+    } 
+    .ustmenu .sutun li a{display:block;color:#ccc}
+    .ustmenu .sutun li a:hover{color:rgb(10, 10, 10)}   */
+.resim{
+	max-width:35%;
+	border-radius: 20px;
+	float:right;
+	padding: 2px;
+}
+#tabbuton{margin-top: -10px;
+	 padding: 0px;
+}
+/* anasayfa tab tab buttons */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 7px 8px;
+  margin: 3px -3px 3px -3px;
+text-align: center;
+}
+
+.tablink:hover {
+  background-color: #777;
+	outline: none;
+}
+
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 5px;
+  padding-top: 10px;
+  float: left;
+  width: 100%;
+	text-align: left;
+
+}
+
+#deneme1, #deneme2, #deneme3, #deneme4, #deneme5, #deneme6, #deneme7 {background-color:white;}
+
+
+
+
+/*alt menü* sayfa başlıklarında kulandım*/
+    .altmenu li{
+        display:inline-block;
+        text-align: center;
+        padding: 3px;
+		text-transform: capitalize;
+		font-weight: 100;
+    }
+    .altmenu li a{color:#70757a;text-decoration:none;padding: bottom 5px;}
+    .altmenu li a:hover{border-bottom:2px solid #70757a;color:#000}
